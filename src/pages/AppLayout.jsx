@@ -1,4 +1,4 @@
-import Navbar from '../components/Navbar'
+import NavBar from '../components/NavBar'
 export default function AppLayout() {
     return (
       <>
@@ -9,7 +9,7 @@ export default function AppLayout() {
           </div>
         </div>
         <div className='col-start-1 col-span-6 lg:col-start-6 lg:row-start-2 lg:row-span-2 flex items-center justify-center mt-3 lg:items-start lg:justify-start lg:mt-3 lg:ml-[20%] '>
-          <Navbar/>
+          <NavBar/>
         </div>
       </div>
       </>
