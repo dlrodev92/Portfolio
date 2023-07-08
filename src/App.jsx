@@ -1,10 +1,14 @@
+import { BrowserRouter as Router } from "react-router-dom";
 import './App.css'
-import AppLayout from './pages/AppLayout';
+import RoutesAnimated from './components/RoutesAnimated'
+
 function App() {
   return (
-    <>
-     <AppLayout/>
-    </>
+    <div className='overflow-y-hidden'>
+      <Router>
+      <RoutesAnimated/>
+      </Router>
+    </div>
   )
 }
 
