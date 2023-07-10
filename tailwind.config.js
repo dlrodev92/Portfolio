@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
     extend: {
+        fontFamily: {
+          Jost:['Jost'],
+        },
       gridTemplateColumns: {
         'appLayout': '0.6fr 1.4fr 1fr 1fr 1fr 0.6fr',
         'appLayoutMobile': '1fr 1fr 1fr 1fr 1fr 1fr',

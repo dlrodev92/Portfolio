@@ -9,7 +9,7 @@ export default function NavBar() {
             <ul className='w-full h-full flex  lg:flex-col justify-around lg:justify-around items-center lg:items-center'>
                 <NavLink
                     to="/"
-                > <FontAwesomeIcon icon={faHouse} className='text-[30px] text-[#D1D1D1] hover:text-[#21C4E1] cursor-pointer' /></NavLink>
+                > <FontAwesomeIcon icon={faHouse}  className='text-[30px] text-[#D1D1D1] hover:text-[#21C4E1] cursor-pointer' /></NavLink>
                 <NavLink
                     to="/About"
                 > <FontAwesomeIcon icon={faUser} className='text-[30px] text-[#D1D1D1] hover:text-[#21C4E1] cursor-pointer'/></NavLink>
