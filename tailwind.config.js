@@ -25,7 +25,8 @@ export default {
       boxShadow:{
         'inner': "-8px -1px 38px 15px rgba(0,0,0,0.13)",
         'outer': "13px 13px 42px 15px rgba(0,0,0,0.52)",
-        'navbar': '8px -1px 95px 15px rgba(0,0,0,0.21)'
+        'navbar': '8px -1px 95px 15px rgba(0,0,0,0.21)',
+        'david': '0px 10px 33px 0px rgba(85,86,91,0.5)'
       }
     },
   },

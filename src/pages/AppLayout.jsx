@@ -12,7 +12,7 @@ export default function AppLayout() {
       <div className='w-screen h-screen grid grid-cols-appLayout grid-rows-appLayout p-7 lg:p-1'>
         <div className='col-start-1 col-span-6 row-start-1 row-span-5 lg:col-start-2 lg:col-span-4 lg:row-start-2 lg:row-span-4 bg-blueBackground flex lg:justify-end lg:flex-row flex-col justify-end lg:rounded-[50px] rounded-[20px] lg:shadow-inner'>
           <div className="h-[10%] flex justify-center gap-10 items-center lg:flex-col lg:items-center lg:justify-center lg:w-[25%] lg:h-full lg:gap-5">
-            <img className="w-[60px] lg:w-[60%] mb-1" src="https://i.ibb.co/df9j7n5/F2-F2-F2-8.png" alt="profile.pic" />
+            <img className="w-[60px] lg:w-[60%] mb-1" src="https://i.ibb.co/3cn3jgR/F2-F2-F2-10.png" alt="profile.pic" />
             <div className="flex flex-col gap-1 justify-center items-center">
               <h1 className="font-Jost tracking-wider hidden lg:block lg:text-[130%]  text-white font-bold">David Lopez Rodriguez</h1>
               <h2 className="font-Jost tracking-wider hidden lg:block lg:text-[95%] text-white">Junior Full Stack Developer</h2>
@@ -31,12 +31,11 @@ export default function AppLayout() {
             </a>
           </div>
           <motion.div className='bg-white lg:w-[75%] lg:h-full lg:rounded-[50px] shadow-inner w-full h-[88%] rounded-b-[20px]'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              ease: "linear",
-              duration: 0.6,
-            }}>
+                initial={{ x: 300, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                exit={{ x: -300, opacity: 0 }}
+                transition={{duration: 0.5}}
+                >
             <Outlet />
           </motion.div>
         </div>

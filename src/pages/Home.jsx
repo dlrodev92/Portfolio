@@ -1,15 +1,14 @@
 import {motion} from "framer-motion"
+import SkillBouble from "../components/SkillBouble"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import{faHtml5, faCss3Alt, faCss3, faReact, faSquareJs,faNode } from '@fortawesome/free-brands-svg-icons'
 export default function Home() {
     return (
-        <div className="h-[100%] w-full grid grid-cols-4 grid-rows-3 rounded:[20px] lg:rounded-[50px]">
-            <div className="col-start-1 col-span-2 row-start-1 row-span-2 bg-slate-500">
-
-            </div>
-            <div className="col-start-3 col-span-2 row-start-1 row-span-2 bg-violet-500">
-
-            </div>
+        <div className="h-[100%] w-full grid grid-cols-4 grid-rows-4 rounded:[20px] lg:rounded-[50px]">
+            <div className="col-start-1 row-start-1 col-span-4 flex flex-col items-start relative">
                  <motion.h1 
-                 className="text-[80px] font-Jost col-start-1 row-start-3 col-span-4 w-full h-1/2 break-normal"
+                 className="text-[5rem] font-Jost w-full h-1/2 break-normal text-center absolute"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ 
@@ -186,6 +185,99 @@ export default function Home() {
                     z
                 </motion.span>
                 </motion.h1>
-        </div>
-    )
-}
+                <motion.img 
+                src="https://i.ibb.co/9HFf4fK/2.png" 
+                alt="dave_face" 
+                className="w-[30%] absolute self-end mr-[50px] mt-16 rounded-2xl "
+                initial={{ x: '-100%' }}
+                animate={{ x: 0 }}
+                exit={{ x: '100%' }}
+                transition={{ duration: 1 }}
+                />
+            </div>
+            <motion.div className="col-start-1 col-span-4 row-start-2 row-span-1 flex flex-col justify-around items-start ml-16"
+            initial={{ x: '-100%' }}
+            animate={{ x: 0 }}
+            exit={{ x: '100%' }}
+            transition={{ duration: 1 }}>
+                <h1 className="text-[1.8rem] font-Jost -bold relative border-b-8 border-blueBackground">
+                    I'm a junior web developer specializing in the MERN stack. 
+                </h1>
+
+                <li className="list-none">
+                   <h3 className="text-[1.2rem] italic font-Jost">- "I develop dynamic and responsive web applications using React".</h3>
+                </li>
+                <li className="list-none">
+                   <h3 className="text-[1.2rem] italic font-Jost">- "I create secure backend applications using NodeJs and SQL".</h3>
+                </li>
+                <li className="list-none">
+                   <h3 className="text-[1.2rem] italic font-Jost">- "I'm currently learning PHP/Laravel to expand my knowledge of the web".</h3>
+                </li>
+            </motion.div>
+            <div className="col-start-1 col-span-4 row-start-3 row-span-4 flex flex-col justify-start items-center">
+                <h1 className="text-[1.8rem] font-Jost -bold relative border-b-8 border-blueBackground mt-9">
+                    My Skills
+                </h1>
+            <div className="w-full h-full grid grid-cols-5 grid-rows-4 gap-2 p-5 ">
+                    <SkillBouble
+                    name="HTML"
+                    icon={<FontAwesomeIcon icon={faHtml5} />}
+                    grid="col-start-2 col-span-1 row-start-1 row-span-1"
+                    text="text-[100%]"
+                    color="lime-400"
+                    />
+                    <SkillBouble
+                    name="CSS"
+                    icon={<FontAwesomeIcon icon={faCss3Alt} />}
+                    grid="col-start-4 col-span-1 row-start-1 row-span-1"
+                    text="text-[100%]"
+                    color="blueBackground"
+                    />
+                    <SkillBouble
+                    name="JavaScript"
+                    icon={<FontAwesomeIcon icon={faSquareJs} />}
+                    grid="col-start-1 col-span-1 row-start-2 row-span-1"
+                    text="text-[100%]"
+                    color="yellow-400"
+                    />
+                    <SkillBouble
+                    name="TailwindCSS"
+                    icon={<FontAwesomeIcon icon={faCss3} />}
+                    grid="col-start-5 col-span-1 row-start-2 row-span-1"
+                    text="text-[100%]"
+                    color="violet-500"
+                    />
+                    <SkillBouble
+                    name="Node"
+                    icon={<FontAwesomeIcon icon={faNode} />}
+                    grid="col-start-2 col-span-1 row-start-3 row-span-1"
+                    text="text-[100%]"
+                    color="green-400"
+                    />
+                    <SkillBouble
+                    name="Express"
+                    icon={<FontAwesomeIcon icon={faUser} />}
+                    grid="col-start-4 col-span-1 row-start-3 row-span-1"
+                    text="text-[100%]"
+                    color="indigo-400"
+                    />
+                    <SkillBouble
+                    name="React"
+                    icon={<FontAwesomeIcon icon={faReact} />}
+                    grid="ml-[25%] mr-[25%] col-start-2 col-span-2 row-start-2 row-span-1"
+                    text="text-[100%]"
+                    color="red-500"
+                    />
+                    <SkillBouble
+                    name="React"
+                    icon={<FontAwesomeIcon icon={faReact} />}
+                    grid=" ml-[25%] mr-[25%]  col-start-3 col-span-2 row-start-2 row-span-1"
+                    text="text-[100%]"
+                    color="red-500"
+                    />
+                    
+            </div>
+            </div>
+            </div>
+                )
+            }
