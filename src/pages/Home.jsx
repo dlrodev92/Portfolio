@@ -1,14 +1,15 @@
 import {motion} from "framer-motion"
 import SkillBouble from "../components/SkillBouble"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser } from '@fortawesome/free-solid-svg-icons';
-import{faHtml5, faCss3Alt, faCss3, faReact, faSquareJs,faNode } from '@fortawesome/free-brands-svg-icons'
+import{faHtml5, faCss3, faReact, faSquareJs,faNode } from '@fortawesome/free-brands-svg-icons'
+import{faTruckFast, faTextHeight, faDatabase} from '@fortawesome/free-solid-svg-icons'
+
 export default function Home() {
     return (
-        <div className="h-[100%] w-full grid grid-cols-4 grid-rows-4 rounded:[20px] lg:rounded-[50px]">
-            <div className="col-start-1 row-start-1 col-span-4 flex flex-col items-start relative">
+        <div className="h-auto w-[100%] flex flex-col rounded:[20px] lg:rounded-[50px]">
+            <div className="col-start-1 row-start-1 col-span-4 flex flex-col justify-center items-center">
                  <motion.h1 
-                 className="text-[5rem] font-Jost w-full h-1/2 break-normal text-center absolute"
+                 className="md:text-[300%] text-[200%] font-Jost break-normal mt-3"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ 
@@ -17,7 +18,7 @@ export default function Home() {
                     }}
                  >
                 <motion.span
-                    style={{ display: 'inline-block', marginRight: '0.1em' }}
+                    style={{ marginRight: '0.1em' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, repeat: 6, delay: 0.5}}
@@ -25,7 +26,7 @@ export default function Home() {
                     D
                 </motion.span>
                 <motion.span
-                    style={{ display: 'inline-block', marginRight: '0.1em' }}
+                    style={{ marginRight: '0.1em' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 ,repeat: 6 }}
@@ -33,7 +34,7 @@ export default function Home() {
                     a
                 </motion.span>
                 <motion.span
-                    style={{ display: 'inline-block', marginRight: '0.1em' }}
+                    style={{ marginRight: '0.1em' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.4 ,repeat: 6 }}
@@ -41,7 +42,7 @@ export default function Home() {
                     v
                 </motion.span>
                 <motion.span
-                    style={{ display: 'inline-block', marginRight: '0.1em' }}
+                    style={{ marginRight: '0.1em' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.6 ,repeat: 6 }}
@@ -49,7 +50,7 @@ export default function Home() {
                     i
                 </motion.span>
                 <motion.span
-                    style={{ display: 'inline-block', marginRight: '0.1em' }}
+                    style={{ marginRight: '0.1em' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 1 ,repeat: 6 }}
@@ -57,7 +58,7 @@ export default function Home() {
                 d
                 </motion.span>
                 <motion.span
-                    style={{ display: 'inline-block', marginRight: '0.1em' }}
+                    style={{ marginRight: '0.1em' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.8 ,repeat: 6 }}
@@ -65,7 +66,7 @@ export default function Home() {
                     &nbsp;
                 </motion.span>
                 <motion.span
-                    style={{ display: 'inline-block', marginRight: '0.1em' }}
+                    style={{ marginRight: '0.1em' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 1.2 ,repeat: 5 }}
@@ -73,7 +74,7 @@ export default function Home() {
                     L
                 </motion.span>
                 <motion.span
-                    style={{ display: 'inline-block', marginRight: '0.1em' }}
+                    style={{ marginRight: '0.1em' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 1.4 ,repeat: 5 }}
@@ -81,7 +82,7 @@ export default function Home() {
                     ó
                 </motion.span>
                 <motion.span
-                    style={{ display: 'inline-block', marginRight: '0.1em' }}
+                    style={{ marginRight: '0.1em' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 1.6 ,repeat: 5}}
@@ -89,7 +90,7 @@ export default function Home() {
                     p
                 </motion.span>
                 <motion.span
-                    style={{ display: 'inline-block', marginRight: '0.1em' }}
+                    style={{ marginRight: '0.1em' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 1.8 ,repeat: 5 }}
@@ -97,7 +98,7 @@ export default function Home() {
                     e
                 </motion.span>
                 <motion.span
-                    style={{ display: 'inline-block', marginRight: '0.1em' }}
+                    style={{ marginRight: '0.1em' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 2 ,repeat: 5 }}
@@ -105,7 +106,7 @@ export default function Home() {
                     z
                 </motion.span>
                 <motion.span
-                    style={{ display: 'inline-block', marginRight: '0.1em' }}
+                    style={{ marginRight: '0.1em' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 2.2 ,repeat: 4 }}
@@ -113,7 +114,7 @@ export default function Home() {
                     &nbsp;
                 </motion.span>
                 <motion.span
-                    style={{ display: 'inline-block', marginRight: '0.1em' }}
+                    style={{ marginRight: '0.1em' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 2.4 ,repeat: 4 }}
@@ -121,7 +122,7 @@ export default function Home() {
                     R
                 </motion.span>
                 <motion.span
-                    style={{ display: 'inline-block', marginRight: '0.1em' }}
+                    style={{ marginRight: '0.1em' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 2.6 ,repeat: 4 }}
@@ -129,7 +130,7 @@ export default function Home() {
                     o
                 </motion.span>
                 <motion.span
-                    style={{ display: 'inline-block', marginRight: '0.1em' }}
+                    style={{ marginRight: '0.1em' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 2.8 ,repeat: 4 }}
@@ -137,7 +138,7 @@ export default function Home() {
                     d
                 </motion.span>
                 <motion.span
-                    style={{ display: 'inline-block', marginRight: '0.1em' }}
+                    style={{  marginRight: '0.1em' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 3 ,repeat: 4 }}
@@ -145,7 +146,7 @@ export default function Home() {
                    r
                 </motion.span>
                 <motion.span
-                    style={{ display: 'inline-block', marginRight: '0.1em' }}
+                    style={{ marginRight: '0.1em' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 3.2 ,repeat: 3 }}
@@ -153,7 +154,7 @@ export default function Home() {
                    í
                 </motion.span>
                 <motion.span
-                    style={{ display: 'inline-block', marginRight: '0.1em' }}
+                    style={{ marginRight: '0.1em' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 3.4 ,repeat: 3 }}
@@ -161,7 +162,7 @@ export default function Home() {
                     g
                 </motion.span>
                 <motion.span
-                    style={{ display: 'inline-block', marginRight: '0.1em' }}
+                    style={{ marginRight: '0.1em' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 3.6 ,repeat: 3 }}
@@ -169,7 +170,7 @@ export default function Home() {
                     u
                 </motion.span>
                 <motion.span
-                    style={{ display: 'inline-block', marginRight: '0.1em' }}
+                    style={{  marginRight: '0.1em' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 3.8 ,repeat: 3 }}
@@ -177,7 +178,7 @@ export default function Home() {
                     e
                 </motion.span>
                 <motion.span
-                    style={{ display: 'inline-block', marginRight: '0.1em' }}
+                    style={{  marginRight: '0.1em' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 4 ,repeat: 3 }}
@@ -188,34 +189,39 @@ export default function Home() {
                 <motion.img 
                 src="https://i.ibb.co/9HFf4fK/2.png" 
                 alt="dave_face" 
-                className="w-[30%] absolute self-end mr-[50px] mt-16 rounded-2xl "
+                className="lg:w-[20%] w-[30%] rounded-2xl mt-[-20px] "
                 initial={{ x: '-100%' }}
                 animate={{ x: 0 }}
                 exit={{ x: '100%' }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.7 }}
                 />
             </div>
-            <motion.div className="col-start-1 col-span-4 row-start-2 row-span-1 flex flex-col justify-around items-start ml-16"
+            <motion.div className="flex flex-col justify-around items-center p-5 mt-5"
             initial={{ x: '-100%' }}
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
-            transition={{ duration: 1 }}>
-                <h1 className="text-[1.8rem] font-Jost -bold relative border-b-8 border-blueBackground">
-                    I'm a junior web developer specializing in the MERN stack. 
+            transition={{ duration: 0.7 }}>
+                <h1 className="lg:text-[1.8rem] text-[1.4rem] font-Jost -bold relative border-b-8 border-blueBackground text-center">
+                    I'm a junior web developer specializing in the MERN stack.
                 </h1>
-
                 <li className="list-none">
-                   <h3 className="text-[1.2rem] italic font-Jost">- "I develop dynamic and responsive web applications using React".</h3>
+                   <h3 className="lg:text-[1.3rem] text-[1rem] italic font-Jost">- "I develop dynamic and responsive web applications using React".</h3>
                 </li>
                 <li className="list-none">
-                   <h3 className="text-[1.2rem] italic font-Jost">- "I create secure backend applications using NodeJs and SQL".</h3>
+                   <h3 className="lg:text-[1.3rem] text-[1rem] italic font-Jost">- "I create secure backend applications using NodeJs and SQL".</h3>
                 </li>
                 <li className="list-none">
-                   <h3 className="text-[1.2rem] italic font-Jost">- "I'm currently learning PHP/Laravel to expand my knowledge of the web".</h3>
+                   <h3 className="lg:text-[1.3rem] text-[1rem] italic font-Jost">- "I'm currently learning PHP/Laravel to expand my knowledge of the web".</h3>
                 </li>
             </motion.div>
-            <div className="col-start-1 col-span-4 row-start-3 row-span-4 flex flex-col justify-start items-center">
-                <h1 className="text-[1.8rem] font-Jost -bold relative border-b-8 border-blueBackground mt-9">
+            <motion.div className="flex flex-col justify-start items-center mt-[-25px]"
+            initial={{ x: '-100%' }}
+            animate={{ x: 0 }}
+            exit={{ x: '100%' }}
+            transition={{ duration: 0.7 }}
+            >
+                <h1 className="lg:text-[1.8rem] text-[1.4rem] font-Jost -bold relative border-b-8 border-blueBackground mt-9"
+                >
                     My Skills
                 </h1>
             <div className="w-full h-full grid grid-cols-5 grid-rows-4 gap-2 p-5 ">
@@ -223,61 +229,63 @@ export default function Home() {
                     name="HTML"
                     icon={<FontAwesomeIcon icon={faHtml5} />}
                     grid="col-start-2 col-span-1 row-start-1 row-span-1"
-                    text="text-[100%]"
-                    color="lime-400"
+                    text="text-[85%] lg:text-[100%]"
+                    color="bg-html"
                     />
                     <SkillBouble
-                    name="CSS"
-                    icon={<FontAwesomeIcon icon={faCss3Alt} />}
+                    name="Typescript"
+                    icon={<FontAwesomeIcon icon={faTextHeight} />}
                     grid="col-start-4 col-span-1 row-start-1 row-span-1"
-                    text="text-[100%]"
-                    color="blueBackground"
+                    text="text-[65%] lg:text-[100%]"
+                    color="bg-ts"
                     />
                     <SkillBouble
                     name="JavaScript"
                     icon={<FontAwesomeIcon icon={faSquareJs} />}
                     grid="col-start-1 col-span-1 row-start-2 row-span-1"
-                    text="text-[100%]"
-                    color="yellow-400"
+                    text="text-[65%] lg:text-[100%]"
+                    color="bg-js"
                     />
                     <SkillBouble
-                    name="TailwindCSS"
-                    icon={<FontAwesomeIcon icon={faCss3} />}
-                    grid="col-start-5 col-span-1 row-start-2 row-span-1"
-                    text="text-[100%]"
-                    color="violet-500"
-                    />
-                    <SkillBouble
-                    name="Node"
+                    name="NodeJs"
                     icon={<FontAwesomeIcon icon={faNode} />}
+                    grid="col-start-5 col-span-1 row-start-2 row-span-1"
+                    text="text-[85%] lg:text-[100%]"
+                    color="bg-node"
+                    />
+                    <SkillBouble
+                    name="CSS"
+                    icon={<FontAwesomeIcon icon={faCss3} />}
                     grid="col-start-2 col-span-1 row-start-3 row-span-1"
-                    text="text-[100%]"
-                    color="green-400"
+                    text="text-[85%] lg:text-[100%]"
+                    color="bg-tailwind"
                     />
                     <SkillBouble
                     name="Express"
-                    icon={<FontAwesomeIcon icon={faUser} />}
+                    icon={<FontAwesomeIcon icon={faTruckFast} />}
                     grid="col-start-4 col-span-1 row-start-3 row-span-1"
-                    text="text-[100%]"
-                    color="indigo-400"
+                    text="text-[85%]"
+                    color="bg-express"
                     />
                     <SkillBouble
                     name="React"
                     icon={<FontAwesomeIcon icon={faReact} />}
                     grid="ml-[25%] mr-[25%] col-start-2 col-span-2 row-start-2 row-span-1"
-                    text="text-[100%]"
-                    color="red-500"
+                    text="text-[85%] lg:text-[100%]"
+                    color="bg-react"
                     />
                     <SkillBouble
-                    name="React"
-                    icon={<FontAwesomeIcon icon={faReact} />}
+                    name="SQL"
+                    icon={<FontAwesomeIcon icon={faDatabase} />}
                     grid=" ml-[25%] mr-[25%]  col-start-3 col-span-2 row-start-2 row-span-1"
-                    text="text-[100%]"
-                    color="red-500"
+                    text="text-[85%] lg:text-[100%]"
+                    color="bg-yellow-300"
                     />
-                    
+                   
             </div>
-            </div>
+            </motion.div>
+
+
             </div>
                 )
             }
