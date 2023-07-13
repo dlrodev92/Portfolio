@@ -1,6 +1,6 @@
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion} from 'framer-motion';
 
-export default function Modal({ toggleModal }) {
+export default function Modal() {
   return (
       <motion.div
         className="fixed top- left-0 w-screen h-screen flex items-center justify-center bg-black bg-opacity-50"
@@ -51,7 +51,6 @@ export default function Modal({ toggleModal }) {
             
             <button
             className="text-white bg-blue-500 px-4 py-2 rounded-lg mt-4"
-            onClick={toggleModal}
           >
             Close
           </button>

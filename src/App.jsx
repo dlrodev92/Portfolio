@@ -4,7 +4,7 @@ import RoutesAnimated from './components/RoutesAnimated'
 
 function App() {
   return (
-    <div className='overflow-y-hidden'>
+    <div className='overflow-y-hidden scrollbar-hide'>
       <Router>
       <RoutesAnimated/>
       </Router>
