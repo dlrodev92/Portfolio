@@ -1,17 +1,44 @@
 import { motion } from "framer-motion";
 import SkillBouble from './../components/SkillBouble';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Carrousel from "./../components/Carrousel";
+import {images} from "../assets/images.js"
+import { useEffect, useState } from "react";
 
 export default function MigthyMiniMinds() {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+    function getImages() {
+    const imageElements = images.map((image) => {
+      return (
+        <motion.div className="item min-w-[550px] min-h-[250px] rounded-[25px] p-5 " key={image}>
+        <img src={image} className="w-[100%] h-[100%] rounded-[25px] pointer-events-none " alt="img" />
+        </motion.div>
+      );
+    });
+    return imageElements;
+  }
     return (
         <motion.div className="h-[100%] w-full flex flex-col items-center justify-start rounded-b-[20px] lg:rounded-[50px] overflow-y-scroll scrollbar-hide"
         key="migthyMiniMinds"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0, opacity: 0 }}
-        transition={{ duration: 0.5 }}>
+        transition={{ duration: 0.5 }}
+        >
           <h1 className='lg:text-[4rem] text-[3rem] font-Jost relative border-b-8 mb-5 border-blueBackground text-center'>
-            Title
+            Title {screenWidth}
           </h1>
           <img src="https://www.liquidplanner.com/wp-content/uploads/2019/04/HiRes-17.jpg" alt='project image' className='w-[100%] lg:w-[100%] bg-fixed'/>
           <div className='w-full bg-slate-200 flex flex-col justify-start md:justify-center items-center rounded-lg p-3'>
@@ -28,7 +55,7 @@ export default function MigthyMiniMinds() {
               <h3 className='lg:text-[2rem] text-[1.8rem] font-Jost font-bold mt-5  text-center'>
                 Stack
               </h3>
-              <div className="w-[75%] h-full grid grid-cols-6 grid-rows-4 gap-2 p-5 ">
+              <div className="w-[75%]  grid grid-cols-6 grid-rows-4 gap-2 p-5 ">
                     <SkillBouble
                     name="HTML"
                     icon="icon"
@@ -102,11 +129,12 @@ export default function MigthyMiniMinds() {
             <h3 className='lg:text-[2rem] text-[1.8rem] font-Jost font-bold  text-center'>
                 Gallery
             </h3>
+            <Carrousel images={getImages()}/>
             <h3 className='lg:text-[2rem] text-[1.8rem] font-Jost font-bold  text-center'>
                 Links
             </h3>
             <div className="flex w-full justify-around items-center">
-                <a href="/"><img src="https://i.ibb.co/2jQ7Ngg/4.png" alt="migthywebsite" className="w-[200px] p-5 hover:scale-110  duration-500 cursor-pointer "/></a>
+                <a href="/"><img src={screenWidth > 1023 ? "https://i.ibb.co/2jQ7Ngg/4.png" : "https://i.ibb.co/DfpcBq4/2.png"} alt="migthywebsite" className="w-[200px] p-5 hover:scale-110  duration-500 cursor-pointer "/></a>
                 <a href="/"><img src="https://i.ibb.co/zhD6KVZ/Untitled-design-20.png" alt="github" className="w-[125px] h-[125px]  p-5 hover:scale-110  duration-500 cursor-pointer " /></a>
             </div>
             </div>
