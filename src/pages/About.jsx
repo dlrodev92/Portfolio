@@ -1,7 +1,8 @@
 export default function About() {
+
   return (
-    <>
-      <h1 className='text-4xl font-bold underline'>About</h1>
-    </>
-  )
+    <div className="h-[100%] w-full flex flex-row items-center justify-center rounded:[20px] lg:rounded-[50px]">
+    
+    </div>
+  );
 }
