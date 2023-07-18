@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import SkillBouble from './../components/SkillBouble';
 import Carrousel from "./../components/Carrousel";
-import {data} from "../data/migthyMiniMinds.data";
+import {data} from "../data/thisPortfolio.data";
 import { useEffect, useState } from "react";
 
-export default function MigthyMiniMinds() {
+export default function ThisPortfolio() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   console.log(data)
   
@@ -96,8 +96,8 @@ function getTakeaways() {
                 Links
             </h3>
             <div className="flex w-full justify-around items-center">
-                <a href="https://wonderful-paletas-0c1299.netlify.app/"><img src={screenWidth > 1023 ? "https://i.ibb.co/2jQ7Ngg/4.png" : "https://i.ibb.co/DfpcBq4/2.png"} alt="migthywebsite" className="w-[200px] p-5 hover:scale-110  duration-500 cursor-pointer "/></a>
-                <a href="https://github.com/dlrodev92/migthy_mini_minds"><img src="https://i.ibb.co/zhD6KVZ/Untitled-design-20.png" alt="github" className="w-[125px] h-[125px]  p-5 hover:scale-110  duration-500 cursor-pointer " /></a>
+                <a href="https://resilient-cocada-e4b147.netlify.app/"><img src={screenWidth > 1023 ? "https://i.ibb.co/5xt2MP2/Untitled-design-22.png" : "https://i.ibb.co/wwbJcLz/Untitled-design-21.png"} alt="migthywebsite" className="w-[200px] p-5 hover:scale-110  duration-500 cursor-pointer "/></a>
+                <a href="https://github.com/dlrodev92/Portfolio"><img src="https://i.ibb.co/zhD6KVZ/Untitled-design-20.png" alt="github" className="w-[125px] h-[125px]  p-5 hover:scale-110  duration-500 cursor-pointer " /></a>
             </div>
             </div>
           </div>

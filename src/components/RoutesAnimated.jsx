@@ -5,6 +5,7 @@ import Contact from "../pages/Contact";
 import About from "../pages/About";
 import MigthyMiniMinds from "../pages/MigthyMiniMinds";
 import BigBang from "../pages/BigBang";
+import ThisPortfolio from "../pages/ThisPortfolio";
 import {
     Route,
     Routes,
@@ -23,6 +24,7 @@ export default function RoutesAnimated(){
             <Route path="Contact" element={<Contact/>} />
             <Route path="About" element={<About/>} />
             <Route path="MigthyMiniMinds" element={<MigthyMiniMinds/>} />
+            <Route path="ThisPortfolio" element={<ThisPortfolio/>} />
             <Route path="BigBang" element={<BigBang/>} />
         </Route>
       </Routes>
