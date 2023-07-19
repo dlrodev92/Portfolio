@@ -10,9 +10,9 @@ export default function AppLayout() {
   return (
     <>
       <div className='w-screen h-screen grid grid-cols-appLayout grid-rows-appLayout p-7 lg:p-1 scrollbar-hide '>
-        <div className='col-start-1 col-span-6 row-start-1 row-span-5 lg:col-start-2 lg:col-span-4 lg:row-start-2 lg:row-span-4 bg-blueBackground flex lg:justify-end lg:flex-row flex-col justify-end lg:rounded-[50px] rounded-[20px] lg:shadow-inner'>
+        <div className='col-start-1 col-span-6 row-start-1 row-span-5 lg:col-start-2 lg:col-span-4 lg:row-start-2 lg:row-span-4 bg-blueBackground flex lg:flex-row flex-col justify-end lg:rounded-[50px] rounded-[20px] lg:shadow-inner'>
           <div className="h-[10%] flex justify-center gap-10 items-center lg:flex-col lg:items-center lg:justify-center lg:w-[25%] lg:h-full lg:gap-5">
-            <img className="w-[60px] lg:w-[60%] mb-1" src="https://i.ibb.co/3cn3jgR/F2-F2-F2-10.png" alt="profile.pic" />
+            <img className="w-[60px] lg:w-[60%] xs:ml-2 mb-1" src="https://i.ibb.co/3cn3jgR/F2-F2-F2-10.png" alt="profile.pic" />
             <div className="flex flex-col gap-1 justify-center items-center">
               <h1 className="font-Jost tracking-wider hidden lg:block min-[1200px]:text-[130%] lg:text-[100%]  text-white font-bold">David Lopez Rodriguez</h1>
               <h2 className="font-Jost tracking-wider hidden lg:block max-[1200px]:text-[95%] lg:text-[85%]  text-white">Junior Full Stack Developer</h2>
@@ -25,7 +25,7 @@ export default function AppLayout() {
               <FontAwesomeIcon icon={faGithub} className='text-[25px] lg:text-[30px] text-white hover:scale-125 duration-500 cursor-pointer' />
               </a>
             </div>
-            <a href={resume} download="resume.pdf" className=" font-Jost tracking-wider text-white border-2 border-white font-bold p-1 w-[170px] rounded-2xl lg:rounded-[35px] lg:w-[60%] lg:h-[65px] flex items-center justify-center hover:scale-110  duration-500 cursor-pointer lg:shadow-xl ">
+            <a href={resume} download="resume.pdf" className=" xs:mr-2 font-Jost tracking-wider text-white border-2 border-white font-bold p-1 w-[170px] rounded-2xl lg:rounded-[35px] lg:w-[60%] lg:h-[65px] flex items-center justify-center hover:scale-110  duration-500 cursor-pointer lg:shadow-xl ">
               Resume
             <FontAwesomeIcon icon={faFileArrowDown} className='ml-4 lg:text-[30px] text-white animate-bounce'/>
             </a>

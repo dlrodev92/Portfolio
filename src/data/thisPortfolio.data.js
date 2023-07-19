@@ -5,27 +5,27 @@ export const data = {
     "stackInfo":[{
       name:"Framer Motion",
       grid:"col-start-2 col-span-2 row-start-1 row-span-1",
-      text:"text-[85%] lg:text-[100%]",
+      text:"text-[85%] xs:text-[70%] lg:text-[100%]",
       color:"bg-purple-300",
     },{
       name:"React",
       grid:"col-start-4 col-span-2 row-start-1 row-span-1",
-      text:"text-[65%] lg:text-[100%]",
+      text:"text-[65%] xs:text-[70%] lg:text-[100%]",
       color:"bg-red-500"
     },{
       name:"JavaScript",
       grid:"col-start-1 col-span-2 row-start-2 row-span-1",
-      text:"text-[65%] lg:text-[100%]",
+      text:"text-[65%] xs:text-[70%] lg:text-[100%]",
       color:"bg-js",
     },{
       name:"TailwindCSS",
       grid:"col-start-5 col-span-2 row-start-2 row-span-1",
-      text:"text-[85%] lg:text-[100%]",
+      text:"text-[85%] xs:text-[70%] lg:text-[100%]",
       color:"bg-tailwind"
     },{
         name:"React Router",
         grid:"col-start-3 col-span-2 row-start-2 row-span-1",
-        text:"text-[85%] lg:text-[100%]",
+        text:"text-[85%] xs:text-[70%] lg:text-[100%]",
         color:"bg-green-300"
       },],
     "takeaways": ["Building a personal portfolio allows showcasing skills and capabilities to attract potential clients or employers.","Utilizing modern technologies such as React, Tailwind, and Framer Motion can enhance the functionality and visual appeal of the portfolio.","Learning and implementing third-party libraries like Framer Motion for animations can be challenging but rewarding.","Adhering to best practices and ensuring component reusability and scalability contribute to maintainable code.","Incorporating responsive design techniques ensures a seamless experience across different devices.", "Documenting the project's code and providing documentation for future reference aids in maintenance and further development."],

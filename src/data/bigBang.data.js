@@ -5,27 +5,27 @@ export const data = {
     "stackInfo":[{
       name:"HTML",
       grid:"col-start-2 col-span-2 row-start-1 row-span-1",
-      text:"text-[85%] lg:text-[100%]",
+      text:"text-[85%] xs:text-[70%] lg:text-[100%]",
       color:"bg-purple-300",
     },{
       name:"React",
       grid:"col-start-4 col-span-2 row-start-1 row-span-1",
-      text:"text-[65%] lg:text-[100%]",
+      text:"text-[65%] xs:text-[70%] lg:text-[100%]",
       color:"bg-red-500"
     },{
       name:"JavaScript",
       grid:"col-start-1 col-span-2 row-start-2 row-span-1",
-      text:"text-[65%] lg:text-[100%]",
+      text:"text-[65%] xs:text-[70%] lg:text-[100%]",
       color:"bg-js",
     },{
       name:"TailwindCSS",
       grid:"col-start-5 col-span-2 row-start-2 row-span-1",
-      text:"text-[85%] lg:text-[100%]",
+      text:"text-[85%] xs:text-[70%] lg:text-[100%]",
       color:"bg-tailwind"
     },{
         name:"React Router",
         grid:"col-start-3 col-span-2 row-start-2 row-span-1",
-        text:"text-[85%] lg:text-[100%]",
+        text:"text-[85%] xs:text-[70%] lg:text-[100%]",
         color:"bg-green-300"
       },],
     "takeaways": ["Managing states properly is crucial for creating scalable and maintainable applications.","Continuous learning and improving upon previous projects can enhance skills and knowledge.","Adapting to challenges, such as synchronous operations, can be achieved by exploring alternative hooks and approaches like useReducer.","Incorporating features like avatar picker and interactive gameplay can enhance user engagement."],

@@ -5,37 +5,37 @@ export const data = {
   "stackInfo":[{
     name:"HTML",
     grid:"col-start-2 col-span-2 row-start-1 row-span-1",
-    text:"text-[85%] lg:text-[100%]",
+    text:"text-[85%] xs:text-[70%] lg:text-[100%]",
     color:"bg-html",
   },{
     name:"Jest",
     grid:"col-start-4 col-span-2 row-start-1 row-span-1",
-    text:"text-[65%] lg:text-[100%]",
+    text:"text-[65%] xs:text-[70%] lg:text-[100%]",
     color:"bg-green-500"
   },{
     name:"JavaScript",
     grid:"col-start-1 col-span-2 row-start-2 row-span-1",
-    text:"text-[65%] lg:text-[100%]",
+    text:"text-[65%] xs:text-[70%] lg:text-[100%]",
     color:"bg-js",
   },{
     name:"NodeJs",
     grid:"col-start-5 col-span-2 row-start-2 row-span-1",
-    text:"text-[85%] lg:text-[100%]",
+    text:"text-[85%] xs:text-[70%] lg:text-[100%]",
     color:"bg-node"
   },{
     name:"TailWindCSS",
     grid:"col-start-2 col-span-2 row-start-3 row-span-1",
-    text:"text-[85%] lg:text-[100%]",
+    text:"text-[85%] xs:text-[70%] lg:text-[100%]",
     color:"bg-tailwind"
   },{
     name:"Express",
     grid:"col-start-4 col-span-2 row-start-3 row-span-1",
-    text:"text-[85%]",
+    text:"text-[85%]  xs:text-[70%]",
     color:"bg-purple-500"
   },{
     name:"SQL",
     grid:" ml-[25%] mr-[25%]  col-start-3 col-span-2 row-start-2 row-span-1",
-    text:"text-[85%] lg:text-[100%]",
+    text:"text-[85%] xs:text-[70%] lg:text-[100%]",
     color:"bg-blue-300"
   }],
   "takeaways": ["Agile methodologies like Scrum can provide flexibility and collaboration in the development process.","Backend integration and authorization can be challenging but can be overcome with thorough research and documentation.","Implementing security measures such as JWT and bcrypt is crucial for protecting user data.","Testing using tools like Jest ensures quality assurance and helps identify and fix any issues.","Positive feedback from users or proffesionals can validate design decisions and guide improvements.","User interface and user experience design play a vital role in the overall success and usability of an application.","Prioritizing collaboration and communication within a team by pair programming enhances productivity and problem-solving.","Considering scalability and future growth during development allows for easier expansion and updates in the future."],

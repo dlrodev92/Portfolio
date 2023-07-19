@@ -18,7 +18,7 @@ export default function About() {
         transition={{ duration: 0.7 }}
         />
         <motion.h1 
-        className="text-3xl md:text-[3rem] font-Jost font-bold text-white text-right col-start-1 col-span-4 row-start-3 row-span-1 bg-blueBackground rounded-[25px] mb-[-5%] ml-[-50%] skew-y-[-20deg] p-6 shadow-inner"
+        className="text-3xl xs:text-[1.4rem] md:text-[3rem] font-Jost font-bold text-white text-right col-start-1 col-span-4 row-start-3 row-span-1 bg-blueBackground rounded-[25px] mb-[-5%] ml-[-50%] skew-y-[-20deg] p-6 shadow-inner"
         initial={{ x: '-100%' }}
         animate={{ x: 0 }}
         exit={{ x: '100%' }}
@@ -34,16 +34,16 @@ export default function About() {
         transition={{ duration: 0.7 }}
         >
          <h1 className="text-xl md:text-[2rem] font-Jost font-bold text-white self-center">This Is My Story</h1>
-         <p className='text-md md:text-md lg:text-lg font-jost text-white'>
+         <p className='text-md xs:text-[0.7rem] md:text-md lg:text-lg font-jost text-white'>
             My journey started in the culinary world, where I spent six years honing my skills as a chef.
          </p>
-          <p className='text-sm md:text-md lg:text-lg font-jost text-white'>
+          <p className='text-sm md:text-md xs:text-[0.7rem] lg:text-lg font-jost text-white'>
           But my passion didn't stop there—I ventured into the realm of hospitality and spent the next five years as head waiter and bartender in high-end restaurants.
           </p>
-          <p className='text-sm md:text-md lg:text-lg font-jost text-white'>
+          <p className='text-sm md:text-md xs:text-[0.7rem] lg:text-lg font-jost text-white'>
           Along the way, I dabbled in marketing, exploring my creative side among other jobs.
           </p>
-          <p className='text-sm md:text-md lg:text-lg font-jost text-white'>
+          <p className='text-sm md:text-md xs:text-[0.7rem] lg:text-lg font-jost text-white'>
           Now, I have my sights set on becoming thes best version of a full-stack web developer. My ultimate goal is to create applications that truly make a difference in people's lives.
           </p>
 
@@ -62,11 +62,11 @@ export default function About() {
         transition={{ duration: 1 }}
         >2012
         </motion.h3>
-        <motion.div className='bg-blueBackground flex justify-evenly items-center col-start-1 col-span-6 row-start-2 rounded-[20px] ml-[-25px] shadow-xl p-2'
-        initial={{ x: -400 }}
-        whileInView={{ x: 0 }}
+        <motion.div className='bg-blueBackground flex justify-evenly items-center col-start-1 col-span-6 row-start-2 rounded-[20px] ml-[-25px]  shadow-xl p-2'
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1 , scale: 1}}
         transition={{ duration: 1 }}
-        > <p className='text-sm md:text-md lg:text-lg font-jost text-white ml-[50px]'>
+        > <p className='text-sm md:text-md lg:text-lg font-jost text-white ml-[25px]'>
           I finished my studies in the culinary arts and began my career in the hospitality industry.
           </p>
           <img src="https://i.ibb.co/CJd5Mdn/Untitled-design-25.png" alt="picture" className='w-[20%]' />
@@ -78,10 +78,10 @@ export default function About() {
         >2014
         </motion.h3>
         <motion.div className='border-4 border-blueBackground flex justify-evenly items-center col-start-1 col-span-6 row-start-3 rounded-[20px] ml-[-25px] p-2 shadow-xl'
-        initial={{ x: -400 }}
-        whileInView={{ x: 0 }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1 , scale: 1}}
         transition={{ duration: 1 }}
-        > <p className='text-sm md:text-md lg:text-lg font-jost text-black ml-[50px]'>
+        > <p className='text-sm md:text-md lg:text-lg font-jost text-black ml-[25px]'>
           I got married! and also started feeling compelled by moving abroad and exploring new opportunities. Started to learn English.
           </p>
           <img src="https://i.ibb.co/gwtBfPM/Untitled-design-26.png" alt="picture" className='w-[20%]' />
@@ -93,11 +93,11 @@ export default function About() {
         >2016
         </motion.h3>
         <motion.div className='bg-blueBackground flex justify-evenly items-center col-start-1 col-span-6 row-start-4 rounded-[20px] ml-[-25px] p-2 shadow-xl'
-        initial={{ x: -400 }}
-        whileInView={{ x: 0 }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1 , scale: 1}}
         transition={{ duration: 1 }}
         >
-          <p className='text-sm md:text-md lg:text-lg font-jost text-white ml-[50px]'>
+          <p className='text-sm md:text-md lg:text-lg font-jost text-white ml-[25px]'>
           I moved to Bournemouth where I worked as a waiter and bartender in a high-end hotel. I also started to learn Portuguese.
           </p>
           <img src="https://i.ibb.co/bHJJdpq/Untitled-design-27.png" alt="picture" className='w-[20%]' />
@@ -109,12 +109,12 @@ export default function About() {
         >2020
         </motion.h3>
         <motion.div className='border-4 border-blueBackground flex justify-evenly items-center col-start-1 col-span-6 row-start-5 rounded-[20px] ml-[-25px] p-2 shadow-xl'
-        initial={{ x: -400 }}
-        whileInView={{ x: 0 }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1 , scale: 1}}
         transition={{ duration: 1 }}
         >
-          <p className='text-sm md:text-md lg:text-lg font-jost text-black ml-[50px]'>
-          During the challenging times brought about by the Covid pandemic, I decided to explore new avenues of personal and professional development. Although my language studies at the Open University didn't progress as planned, I seized the opportunity to redirect my focus. I embarked on an exciting journey into the realms of marketing, copywriting, and email marketing.
+          <p className='text-sm md:text-md xs:text-[0.5rem] lg:text-lg font-jost text-black ml-[25px]'>
+          During Covid, I decided to explore new avenues of personal and professional development. Although my language degree at the Open University didn't progress as planned, I seized the opportunity to redirect my focus. I embarked on an journey into the realms of marketing, copywriting, and email marketing.
           </p>
           <img src="https://i.ibb.co/2hYnf1p/Untitled-design-28.png" alt="picture" className='w-[20%]' />
         </motion.div>
@@ -125,11 +125,11 @@ export default function About() {
         >2021
         </motion.h3>
         <motion.div className='bg-blueBackground col-start-1 flex justify-evenly items-center col-span-6 row-start-6 rounded-[20px] ml-[-25px] p-2 shadow-xl'
-        initial={{ x: -400 }}
-        whileInView={{ x: 0 }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1 , scale: 1}}
         transition={{ duration: 1 }}
         >
-          <p className='text-sm md:text-md lg:text-lg font-jost text-white ml-[50px]'>
+          <p className='text-sm md:text-md lg:text-lg xs:text-[0.5rem] font-jost text-white ml-[25px]'>
           Moved to London. I found myself back in the vibrant world of restaurants and hotels. Alongside my work in the hospitality sector, I also ventured into the realm of freelancing, offering my expertise in email marketing for e-commerce sites and pursuing copywriting as a rewarding side hustle.
           </p>
           <img src="https://i.ibb.co/Hz2GNMD/Untitled-design-29.png" alt="picture" className='w-[20%]' />
@@ -141,12 +141,12 @@ export default function About() {
         >2022
         </motion.h3>
         <motion.div className='border-4 border-blueBackground flex justify-evenly items-center col-start-1 col-span-6 row-start-7 rounded-[20px] p-2 ml-[-25px] shadow-xl'
-        initial={{ x: -400 }}
-        whileInView={{ x: 0 }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1 , scale: 1}}
         transition={{ duration: 1 }}
         >
-          <p className='text-sm md:text-md lg:text-lg font-jost text-black ml-[50px]'>
-          Got hired at Harrods while exploring my next career move. It was during my time there that I stumbled upon the fascinating world of coding. Intrigued by the possibilities, I embarked on a journey of learning HTML, CSS, and JavaScript, immersing myself in the foundations of web development.
+          <p className='text-sm md:text-md lg:text-lg font-jost xs:text-[0.5rem] text-black ml-[25px]'>
+          Got hired at Harrods while exploring my next career move. It was during my time there that I stumbled upon the fascinating world of coding. I embarked on a journey of learning HTML, CSS, and JavaScript, and learned the foundations of web development.
           </p>
           <img src="https://1000marcas.net/wp-content/uploads/2021/06/Harrods-Logo.png" alt="picture" className='w-[20%] font-color-blueBackground' />
         </motion.div>
@@ -157,11 +157,11 @@ export default function About() {
         >2023
         </motion.h3>
         <motion.div className='bg-blueBackground flex justify-evenly items-center col-start-1 col-span-6 row-start-8 rounded-[20px] ml-[-25px] p-2 shadow-xl'
-        initial={{ x: -400 }}
-        whileInView={{ x: 0 }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1 , scale: 1}}
         transition={{ duration: 1 }}
         >
-          <p className='text-sm md:text-md lg:text-lg font-jost text-white ml-[50px]'>
+          <p className='text-sm md:text-md lg:text-lg font-jost text-white ml-[25px]'>
           The moment has finally arrived! Armed with my graduation from the school of code boot camp and my self-taught skills, I am now fully prepared to launch my career as a developer. 
           </p>
           <img src="https://i.ibb.co/Gx4Q21j/Graphic-Design-2.png" alt="picture" className='w-[20%]' />
