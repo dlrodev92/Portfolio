@@ -8,13 +8,13 @@ export default function ProjCard (props){
     }
     return(
         
-        <motion.div className="w-[45%] min-w-[400px] h-[70%] aspect-video flex flex-col items-center gap-3  rounded-[25px] shadow-xl p-2 relative"
+        <motion.div className="w-[45%] min-w-[400px] h-[70%] aspect-video flex flex-col items-center gap-3  rounded-[25px] shadow-xl p-2 relative "
         initial={{ x: '-100%' }}
         animate={{ x: 0 }}
         exit={{ x: '100%' }}
         transition={{ duration: 0.5 }}>
             <div className='relative w-full h-[70%] rounded-[25px] bg-white'>
-                <motion.div className='absolute top-0 left-0 w-full h-[95%] aspect-video flex items-center justify-center bg-blueBackground opacity-0 rounded-[25px]'
+                <motion.div className={`absolute top-0 left-0 w-full h-[95%] aspect-video flex items-center justify-center ${props.overlay} opacity-0 rounded-[25px]`}
                     whileHover={{x: 0, opacity: 0.9}}
                     transition={{ duration: 0.6 }}
                 >

@@ -13,10 +13,21 @@ export default {
       gridTemplateColumns: {
         'appLayout': '0.6fr 1.4fr 1fr 1fr 1fr 0.6fr',
         'appLayoutMobile': '1fr 1fr 1fr 1fr 1fr 1fr',
+        'aboutLayout': '1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr',
       },
       gridTemplateRows:{
         'appLayout': '0.5fr 1.5fr 1fr 1fr 1.5fr 0.5fr',
         'appLayoutMobile': '1fr 1fr 1fr 1fr 1fr 1fr',
+        'aboutLayout': '0.3fr repeat(7, 200px) ',
+        'historyLayout': '1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr',
+      },
+      gridRow: {
+        'span-7': 'span 7 / span 7',
+        'span-9': 'span 9 / span 9',
+      },
+      gridRowStart: {
+        '8': '8',
+        '9': '9'
       },
       colors: {
         blueBackground: '#21C4E1',
@@ -28,7 +39,9 @@ export default {
         node: '#6CA55F',
         express: '#EEEEEE',
         ts: '#2F74C0',
-        sql: '#31648C'
+        sql: '#31648C',
+        bigbang: '#F28C20',
+        mmm: '#040F72'
 
 
       },
@@ -41,7 +54,6 @@ export default {
     },
   },
   plugins: [
-    require('flowbite/plugin'),
     require('tailwind-scrollbar-hide')
 ],
 }

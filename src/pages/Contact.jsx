@@ -30,6 +30,11 @@ export default function Contact() {
       message: email.message
     };
 
+    if (email.user_name === '' || email.subject === '' || email.user_email === '' || email.message === '') {
+      alert('Please, I will need all the information to send the email.🙂');
+      return;
+    }
+
     // EmailJS service ID, template ID, and user ID
     const serviceId = import.meta.env.VITE_SERVICE_ID 
     const templateId = import.meta.env.VITE_TEMPLATE_ID
@@ -44,6 +49,7 @@ export default function Contact() {
           user_email: '',
           message: ''
         });
+        alert('Your message has been sent successfully!🙂');
       })
       .catch((error) => {
         console.error('Error sending email:', error);
@@ -61,52 +67,55 @@ export default function Contact() {
           }}>
         Let's Talk
       </motion.h1>
-      <motion.form className="flex flex-col items-center w-full gap-5"
+      <motion.form className="flex flex-col items-center w-full h-[80%] focus:outline-none gap-5"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ 
               duration: 1, 
               delay: 0.4
           }}>
-        <div className="w-4/5 lg:w-1/2 flex justify-center items-center border-b-2 border-blueBackground focus:outline-none">
+        <div className="w-4/5 lg:w-1/2 flex h-[10%] text-[1.5rem] justify-center font-Jost items-center border-b-2 border-blueBackground focus:outline-none">
           <input
             type="text"
             value={email.user_name}
             name="user_name"
             placeholder="Name"
             onChange={handleChange}
-            className="border-none w-full focus:outline-none"
+            required={true}
+            className="border-none w-full h-full focus:outline-none"
           />
         </div>
-        <div className="w-4/5 lg:w-1/2  flex justify-center items-center border-b-2 border-blueBackground focus:outline-none">
+        <div className="w-4/5 lg:w-1/2 h-[10%] text-[1.5rem]  flex justify-center font-Jost items-center border-b-2 border-blueBackground focus:outline-none">
           <input
             type="text"
             value={email.subject}
+            required={true}
             name="subject"
             placeholder="Subject"
             onChange={handleChange}
-            className="border-none w-full focus:outline-none"
-            onFocus={(e) => e.target.classList.add('focus:outline-none')}
+            className="border-none w-full h-full focus:outline-none"
           />
         </div>
-        <div className="w-4/5 lg:w-1/2  flex justify-center items-center border-b-2 border-blueBackground focus:outline-none">
+        <div className="w-4/5 lg:w-1/2 h-[10%] text-[1.5rem]  flex justify-center font-Jost items-center border-b-2 border-blueBackground focus:outline-none">
           <input
             type="text"
             value={email.user_email}
             name="user_email"
             placeholder="Email"
             onChange={handleChange}
-            className="border-none w-full focus:outline-none"
+            required={true}
+            className="border-none w-full h-full focus:outline-none"
           />
         </div>
-        <div className="w-4/5 lg:w-1/2  flex justify-center items-center border-b-2 border-blueBackground focus:outline-none">
+        <div className="w-4/5 lg:w-1/2 h-[30%] text-[1.5rem]  flex justify-center font-Jost items-center border-b-2 border-blueBackground focus:outline-none">
           <textarea
             type="text"
             value={email.message}
             name="message"
             placeholder="Message"
             onChange={handleChange}
-            className="border-none w-full focus:outline-none"
+            required={true}
+            className="border-none w-full h-full focus:outline-none"
           />
         </div>
         <button

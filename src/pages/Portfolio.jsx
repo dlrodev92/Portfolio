@@ -12,16 +12,30 @@ export default function Portfolio() {
           }}>
         Projects
         </motion.h1>
-        <div className="w-full h-full flex justify-center flex-wrap gap-5 p-5 ">
+        <div className="w-full h-full flex justify-center flex-wrap gap-5 p-5 mb-[100px]">
         <ProjCard
         title="Migthy Mini Minds"
-        image="https://www.liquidplanner.com/wp-content/uploads/2019/04/HiRes-17.jpg"
+        image="https://i.ibb.co/mHxVXVB/mmm-hero.png"
         linkPage="/MigthyMiniMinds"
+        overlay="bg-mmm"
         />
         <ProjCard
-        title="Rock,Scissors,Papper"
-        image="https://www.liquidplanner.com/wp-content/uploads/2019/04/HiRes-17.jpg"
+        title="R S P L S"
+        image="https://i.ibb.co/74GLC8G/2.png"
         linkPage="/bigBang"
+        overlay="bg-bigbang"
+        />
+        <ProjCard
+        title="This.Portfolio"
+        image="https://i.ibb.co/k5W5fqW/this-Portfolio.png"
+        linkPage="/ThisPortfolio"
+        overlay="bg-blueBackground"
+        />
+        <ProjCard
+        title="Comming Soon..."
+        image="https://i.ibb.co/LnSzYtS/this-Portfolio-1.png"
+        linkPage="/Portfolio"
+        overlay="bg-black"
         />
         </div>
         </div>
