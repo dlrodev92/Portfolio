@@ -96,7 +96,7 @@ function getTakeaways() {
                 Links
             </h3>
             <div className="flex w-full justify-around items-center">
-                <a href="davidlopezportfolio.netlify.app"><img src={screenWidth > 1023 ? "https://i.ibb.co/5xt2MP2/Untitled-design-22.png" : "https://i.ibb.co/wwbJcLz/Untitled-design-21.png"} alt="migthywebsite" className="w-[200px] p-5 hover:scale-110  duration-500 cursor-pointer "/></a>
+                <a href="https://davidlopezportfolio.netlify.app" target="_blank"><img src={screenWidth > 1023 ? "https://i.ibb.co/5xt2MP2/Untitled-design-22.png" : "https://i.ibb.co/wwbJcLz/Untitled-design-21.png"} alt="migthywebsite" className="w-[200px] p-5 hover:scale-110  duration-500 cursor-pointer "/></a>
                 <a href="https://github.com/dlrodev92/Portfolio" target="_blank"><img src="https://i.ibb.co/zhD6KVZ/Untitled-design-20.png" alt="github" className="w-[125px] h-[125px]  p-5 hover:scale-110  duration-500 cursor-pointer " /></a>
             </div>
             </div>
