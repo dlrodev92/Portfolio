@@ -153,7 +153,7 @@ export default function Home() {
                 >
                     My Skills
                 </h1>
-            <div className="w-full h-full grid grid-cols-5 grid-rows-4 gap-2 p-5 ">
+            <div className="w-full h-full grid grid-cols-4 grid-rows-4 gap-2 p-5 ">
                     <SkillBouble
                     name="HTML"
                     icon={<FontAwesomeIcon icon={faHtml5} />}
