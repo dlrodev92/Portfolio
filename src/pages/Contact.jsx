@@ -67,14 +67,14 @@ export default function Contact() {
           }}>
         Let's Talk
       </motion.h1>
-      <motion.form className="flex flex-col items-center w-full focus:outline-none gap-5"
+      <motion.form className="flex flex-col items-center w-full h-[80%] focus:outline-none gap-5"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ 
               duration: 1, 
               delay: 0.4
           }}>
-        <div className="w-4/5 lg:w-1/2 flex justify-center items-center border-b-2 border-blueBackground focus:outline-none">
+        <div className="w-4/5 lg:w-1/2 flex h-[10%] text-[1.5rem] justify-center font-Jost items-center border-b-2 border-blueBackground focus:outline-none">
           <input
             type="text"
             value={email.user_name}
@@ -82,10 +82,10 @@ export default function Contact() {
             placeholder="Name"
             onChange={handleChange}
             required={true}
-            className="border-none w-full focus:outline-none"
+            className="border-none w-full h-full focus:outline-none"
           />
         </div>
-        <div className="w-4/5 lg:w-1/2  flex justify-center items-center border-b-2 border-blueBackground focus:outline-none">
+        <div className="w-4/5 lg:w-1/2 h-[10%] text-[1.5rem]  flex justify-center font-Jost items-center border-b-2 border-blueBackground focus:outline-none">
           <input
             type="text"
             value={email.subject}
@@ -93,10 +93,10 @@ export default function Contact() {
             name="subject"
             placeholder="Subject"
             onChange={handleChange}
-            className="border-none w-full focus:outline-none"
+            className="border-none w-full h-full focus:outline-none"
           />
         </div>
-        <div className="w-4/5 lg:w-1/2  flex justify-center items-center border-b-2 border-blueBackground focus:outline-none">
+        <div className="w-4/5 lg:w-1/2 h-[10%] text-[1.5rem]  flex justify-center font-Jost items-center border-b-2 border-blueBackground focus:outline-none">
           <input
             type="text"
             value={email.user_email}
@@ -104,10 +104,10 @@ export default function Contact() {
             placeholder="Email"
             onChange={handleChange}
             required={true}
-            className="border-none w-full focus:outline-none"
+            className="border-none w-full h-full focus:outline-none"
           />
         </div>
-        <div className="w-4/5 lg:w-1/2  flex justify-center items-center border-b-2 border-blueBackground focus:outline-none">
+        <div className="w-4/5 lg:w-1/2 h-[30%] text-[1.5rem]  flex justify-center font-Jost items-center border-b-2 border-blueBackground focus:outline-none">
           <textarea
             type="text"
             value={email.message}
@@ -115,7 +115,7 @@ export default function Contact() {
             placeholder="Message"
             onChange={handleChange}
             required={true}
-            className="border-none w-full focus:outline-none"
+            className="border-none w-full h-full focus:outline-none"
           />
         </div>
         <button
