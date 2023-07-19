@@ -17,7 +17,7 @@ In this section, you'll find a list of my notable projects. Each project include
 
 - Project 1: Migthy Mini Minds | [Live Demo](https://migthyminiminds.netlify.app) | [Source Code](https://github.com/dlrodev92/Portfolio)
 - Project 2: Rock Papper Scissors Lizard Spock | [Live Demo](https://rsplsbigbang.netlify.app) | [Source Code](https://github.com/dlrodev92/migthy_mini_minds)
-- Project 3: this.Portfolio | [Live Demo](https://davidlopezportfolio.netlify.app) | [Source Code]([link-to-source-3](https://github.com/dlrodev92/Portfolio))
+- Project 3: this.Portfolio | [Live Demo](https://davidlopezportfolio.netlify.app) | [Source Code]([link-to-source-3](https://github.com/dlrodev92/Portfolio)
 
 ## Technologies
 This section highlights the technologies and programming languages I'm proficient in. It demonstrates my versatility and ability to work with various tools and frameworks. Some of the key technologies I have experience with include:
@@ -31,6 +31,8 @@ This section highlights the technologies and programming languages I'm proficien
 - Git
 
 ## Usage
+You can either click this link (https://davidlopezportfolio.netlify.app) or:
+
 To view my portfolio locally, you can follow these steps:
 
 1. Clone this repository to your local machine.
@@ -42,7 +44,7 @@ Feel free to explore the various sections of my portfolio and check out the proj
 ## Contact
 If you would like to get in touch with me or discuss potential collaboration opportunities, you can reach me at:
 
-- Email: [your-email@example.com](mailto:your-email@example.com)
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/your-profile)
+- Email: [your-email@example.com](dlrdev92@gmail.com)
+- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/dave-rodriguez-b27691216/)
 
 Thank you for visiting my web developer portfolio. I hope you find it informative and enjoyable!
