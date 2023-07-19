@@ -6,7 +6,7 @@ import{faTruckFast, faTextHeight, faDatabase} from '@fortawesome/free-solid-svg-
 
 export default function Home() {
     return (
-        <div className="h-auto w-[100%] flex flex-col rounded:[20px] lg:rounded-[50px]">
+        <div className="h-full w-[100%] flex flex-col rounded:[20px] lg:rounded-[50px] overflow-y-scroll scrollbar-hide">
             <div className="col-start-1 row-start-1 col-span-4 flex flex-col justify-center items-center">
                  <motion.h1 
                  className="md:text-[300%] text-[200%] font-Jost break-normal mt-3"
@@ -113,78 +113,7 @@ export default function Home() {
                 >
                     &nbsp;
                 </motion.span>
-                <motion.span
-                    style={{ marginRight: '0.1em' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 2.4 ,repeat: 4 }}
-                >
-                    R
-                </motion.span>
-                <motion.span
-                    style={{ marginRight: '0.1em' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 2.6 ,repeat: 4 }}
-                >
-                    o
-                </motion.span>
-                <motion.span
-                    style={{ marginRight: '0.1em' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 2.8 ,repeat: 4 }}
-                >
-                    d
-                </motion.span>
-                <motion.span
-                    style={{  marginRight: '0.1em' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 3 ,repeat: 4 }}
-                >
-                   r
-                </motion.span>
-                <motion.span
-                    style={{ marginRight: '0.1em' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 3.2 ,repeat: 3 }}
-                >
-                   í
-                </motion.span>
-                <motion.span
-                    style={{ marginRight: '0.1em' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 3.4 ,repeat: 3 }}
-                >
-                    g
-                </motion.span>
-                <motion.span
-                    style={{ marginRight: '0.1em' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 3.6 ,repeat: 3 }}
-                >
-                    u
-                </motion.span>
-                <motion.span
-                    style={{  marginRight: '0.1em' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 3.8 ,repeat: 3 }}
-                >
-                    e
-                </motion.span>
-                <motion.span
-                    style={{  marginRight: '0.1em' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 4 ,repeat: 3 }}
-                >
-                    z
-                </motion.span>
+                
                 </motion.h1>
                 <motion.img 
                 src="https://i.ibb.co/9HFf4fK/2.png" 
@@ -228,57 +157,57 @@ export default function Home() {
                     <SkillBouble
                     name="HTML"
                     icon={<FontAwesomeIcon icon={faHtml5} />}
-                    grid="col-start-2 col-span-1 row-start-1 row-span-1"
-                    text="text-[85%] lg:text-[100%]"
+                    grid="col-start-2 xs:col-span-2 col-span-1 row-start-1 row-span-1"
+                    text="text-[85%] lg:text-[100%] "
                     color="bg-html"
                     />
                     <SkillBouble
                     name="Typescript"
                     icon={<FontAwesomeIcon icon={faTextHeight} />}
-                    grid="col-start-4 col-span-1 row-start-1 row-span-1"
+                    grid="col-start-4 xs:col-span-2 col-span-1 row-start-1 row-span-1"
                     text="text-[65%] lg:text-[100%]"
                     color="bg-ts"
                     />
                     <SkillBouble
                     name="JavaScript"
                     icon={<FontAwesomeIcon icon={faSquareJs} />}
-                    grid="col-start-1 col-span-1 row-start-2 row-span-1"
+                    grid="col-start-1 col-span-1 xs:col-span-2 row-start-2 row-span-1"
                     text="text-[65%] lg:text-[100%]"
                     color="bg-js"
                     />
                     <SkillBouble
                     name="NodeJs"
                     icon={<FontAwesomeIcon icon={faNode} />}
-                    grid="col-start-5 col-span-1 row-start-2 row-span-1"
-                    text="text-[85%] lg:text-[100%]"
+                    grid="col-start-3 col-span-1 row-start-2 row-span-1 xs:row-start-4 xs:col-span-2 xs:col-start-3"
+                    text="text-[85%] lg:text-[100%] xs:text-[70%]"
                     color="bg-node"
                     />
                     <SkillBouble
                     name="CSS"
                     icon={<FontAwesomeIcon icon={faCss3} />}
-                    grid="col-start-2 col-span-1 row-start-3 row-span-1"
-                    text="text-[85%] lg:text-[100%]"
+                    grid="col-start-2 col-span-1 xs:col-span-2 row-start-3 row-span-1"
+                    text="text-[85%] lg:text-[100%] xs:text-[70%]"
                     color="bg-tailwind"
                     />
                     <SkillBouble
                     name="Express"
                     icon={<FontAwesomeIcon icon={faTruckFast} />}
-                    grid="col-start-4 col-span-1 row-start-3 row-span-1"
-                    text="text-[85%]"
+                    grid="col-start-4 col-span-1 xs:col-span-2 row-start-3 row-span-1"
+                    text="text-[85%] xs:text-[70%]"
                     color="bg-express"
                     />
                     <SkillBouble
                     name="React"
                     icon={<FontAwesomeIcon icon={faReact} />}
-                    grid="ml-[25%] mr-[25%] col-start-2 col-span-2 row-start-2 row-span-1"
-                    text="text-[85%] lg:text-[100%]"
+                    grid="ml-[25%] mr-[25%] col-start-2 col-span-2 xs:mr-[0%] xs:ml-[0%] xs:col-start-1 xs:row-start-4 row-span-1"
+                    text="text-[85%] lg:text-[100%] xs:text-[70%]"
                     color="bg-react"
                     />
                     <SkillBouble
                     name="SQL"
                     icon={<FontAwesomeIcon icon={faDatabase} />}
-                    grid=" ml-[25%] mr-[25%]  col-start-3 col-span-2 row-start-2 row-span-1"
-                    text="text-[85%] lg:text-[100%]"
+                    grid=" ml-[25%] mr-[25%] xs:mr-[0%] xs:ml-[0%]  col-start-3 col-span-2 row-start-2 row-span-1"
+                    text="text-[85%] xs:text-[70%] lg:text-[100%]"
                     color="bg-yellow-300"
                     />
                    

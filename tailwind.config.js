@@ -10,6 +10,9 @@ export default {
         fontFamily: {
           Jost:['Jost'],
         },
+        screens: {
+          'xs': '300px',
+        },
       gridTemplateColumns: {
         'appLayout': '0.6fr 1.4fr 1fr 1fr 1fr 0.6fr',
         'appLayoutMobile': '1fr 1fr 1fr 1fr 1fr 1fr',

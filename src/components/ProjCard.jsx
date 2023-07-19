@@ -8,7 +8,7 @@ export default function ProjCard (props){
     }
     return(
         
-        <motion.div className="w-[45%] min-w-[400px] h-[70%] aspect-video flex flex-col items-center gap-3  rounded-[25px] shadow-xl p-2 relative "
+        <motion.div className="w-[45%] xs:min-w-[340px] min-w-[400px] h-[70%] aspect-video flex flex-col items-center gap-3  rounded-[25px] shadow-xl p-2 relative "
         initial={{ x: '-100%' }}
         animate={{ x: 0 }}
         exit={{ x: '100%' }}
