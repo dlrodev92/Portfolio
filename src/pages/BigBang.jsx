@@ -96,7 +96,7 @@ function getTakeaways() {
                 Links
             </h3>
             <div className="flex w-full justify-around items-center">
-                <a href="rsplsbigbang.netlify.app" target="_blank"><img src={screenWidth > 1023 ? "https://i.ibb.co/1zSWFTt/3.png" : "https://i.ibb.co/kXpk9D0/1.png"} alt="migthywebsite" className="w-[200px] p-5 hover:scale-110  duration-500 cursor-pointer "/></a>
+                <a href="rsplsbigbang.netlify.app"><img src={screenWidth > 1023 ? "https://i.ibb.co/1zSWFTt/3.png" : "https://i.ibb.co/kXpk9D0/1.png"} alt="migthywebsite" className="w-[200px] p-5 hover:scale-110  duration-500 cursor-pointer "/></a>
                 <a href="https://github.com/dlrodev92/rock_scissors_papper" target="_blank"><img src="https://i.ibb.co/zhD6KVZ/Untitled-design-20.png" alt="github" className="w-[125px] h-[125px]  p-5 hover:scale-110  duration-500 cursor-pointer " /></a>
             </div>
             </div>
