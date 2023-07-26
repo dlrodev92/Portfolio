@@ -12,7 +12,7 @@ export default function Portfolio() {
           }}>
         Projects
         </motion.h1>
-        <div className="w-full h-full flex justify-center flex-wrap gap-5 p-5 mb-[100px]">
+        <div className="w-full h-full flex justify-center flex-wrap gap-5 p-5 mb-[300px]">
         <ProjCard
         title="Migthy Mini Minds"
         image="https://i.ibb.co/mHxVXVB/mmm-hero.png"
@@ -33,7 +33,7 @@ export default function Portfolio() {
         />
         <ProjCard
         title="Comming Soon..."
-        image="https://i.ibb.co/LnSzYtS/this-Portfolio-1.png"
+        image="https://i.ibb.co/7zYV5w1/this-Portfolio-2.png"
         linkPage="/Portfolio"
         overlay="bg-black"
         />

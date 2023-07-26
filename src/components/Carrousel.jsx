@@ -15,6 +15,9 @@ export default function Carrousel (props){
             dragConstraints={{right:0, left: -width}}
             className="w-full flex rounded-[25px]"
             whileTap={{cursor:"grabbing"}}
+            initial={{ opacity: 0.1 }}
+            whileInView={{ opacity: 1}}
+            transition={{ duration: 1 }}
             >
                {props.images}
             </motion.div>

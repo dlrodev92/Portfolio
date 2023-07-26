@@ -140,7 +140,7 @@ export default function Home() {
                    <h3 className="lg:text-[1.3rem] text-[1rem] italic font-Jost">- "I create secure backend applications using NodeJs and SQL".</h3>
                 </li>
                 <li className="list-none">
-                   <h3 className="lg:text-[1.3rem] text-[1rem] italic font-Jost">- "I'm currently learning PHP/Laravel to expand my knowledge of the web".</h3>
+                   <h3 className="lg:text-[1.3rem] text-[1rem] italic font-Jost">- "I'm currently learning JAVA to expand my knowledge of the web".</h3>
                 </li>
             </motion.div>
             <motion.div className="flex flex-col justify-start items-center mt-[-25px]"
