@@ -25,7 +25,7 @@ export default function AppLayout() {
               <FontAwesomeIcon icon={faGithub} className='text-[25px] lg:text-[30px] text-white hover:scale-125 duration-500 cursor-pointer' />
               </a>
             </div>
-            <a href={resume} download="resume.pdf" className=" xs:mr-2 font-Jost tracking-wider text-white border-2 border-white font-bold p-1 w-[170px] rounded-2xl lg:rounded-[35px] lg:w-[60%] lg:h-[65px] flex items-center justify-center hover:scale-110  duration-500 cursor-pointer lg:shadow-xl ">
+            <a href={resume} download="Resume.pdf" className=" xs:mr-2 font-Jost tracking-wider text-white border-2 border-white font-bold p-1 w-[170px] rounded-2xl lg:rounded-[35px] lg:w-[60%] lg:h-[65px] flex items-center justify-center hover:scale-110  duration-500 cursor-pointer lg:shadow-xl ">
               Resume
             <FontAwesomeIcon icon={faFileArrowDown} className='ml-4 lg:text-[30px] text-white animate-bounce'/>
             </a>
