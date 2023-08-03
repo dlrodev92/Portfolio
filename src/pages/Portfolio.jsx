@@ -14,7 +14,7 @@ export default function Portfolio() {
         </motion.h1>
         <div className="w-full h-full flex justify-center flex-wrap gap-5 p-5 mb-[300px]">
         <ProjCard
-        title="Migthy Mini Minds"
+        title="Mighty Mini Minds"
         image="https://i.ibb.co/mHxVXVB/mmm-hero.png"
         linkPage="/MigthyMiniMinds"
         overlay="bg-mmm"
