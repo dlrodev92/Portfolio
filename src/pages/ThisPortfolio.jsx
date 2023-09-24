@@ -23,8 +23,10 @@ export default function ThisPortfolio() {
     function getImages() {
     const imageElements = data.carouselImages.map((image) => {
       return (
-        <motion.div className="item min-w-[550px] min-h-[250px] rounded-[25px] p-5 " key={image}>
-        <img src={image} className="w-[100%] h-[100%] rounded-[25px] pointer-events-none " alt="img" />
+        <motion.div className="item min-w-[550px] min-h-[250px] rounded-[25px] p-5 " key={image} initial={{ opacity: 0.1 }}
+        whileInView={{ opacity: 1}}
+        transition={{ duration: 2 }}>
+        <img src={image} className="w-[100%] h-[100%] rounded-[25px] pointer-events-none " alt="img" loading="lazy" />
         </motion.div>
       );
     });
@@ -65,7 +67,7 @@ function getTakeaways() {
           transition={{ duration: 0.7 }}>
             {data.title}
           </motion.h1>
-          <motion.img src={data.heroImage} alt='project image' className='w-[100%] bg-fixed'
+          <motion.img src={data.heroImage} alt='project image' className='w-[100%] bg-fixed' loading="lazy"
           initial={{ opacity: 0.1 }}
           whileInView={{ opacity: 1}}
           transition={{ duration: 0.7 }}/>

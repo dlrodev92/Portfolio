@@ -23,9 +23,12 @@ export default function MigthyMiniMinds() {
     function getImages() {
     const imageElements = data.carouselImages.map((image) => {
       return (
-        <motion.div className="item min-w-[550px] min-h-[250px] rounded-[25px] p-5 " key={image}>
-        <img src={image} className="w-[100%] h-[100%] rounded-[25px] pointer-events-none " alt="img" />
-        </motion.div>
+        <div className="item min-w-[550px] h-[400px] rounded-[25px] p-5 flex items-center justify-center" key={image}>
+        <motion.img src={image} className="w-[80%] h-[80%] rounded-[25px] pointer-events-none" alt="project img" loading="lazy"
+        initial={{ opacity: 0.1 }}
+        whileInView={{ opacity: 1}}
+        transition={{ duration: 2 }}/>
+        </div>
       );
     });
     return imageElements;
@@ -70,6 +73,7 @@ function getTakeaways() {
           initial={{ opacity: 0.1 }}
           whileInView={{ opacity: 1}}
           transition={{ duration: 0.7 }}
+          loading="lazy"
           />
           <div className='w-full bg-slate-200 flex flex-col justify-start md:justify-center items-center rounded-lg p-3'>
             <motion.h2 className='lg:text-[3rem] text-[2rem] font-Jost border-b-8 border-blueBackground text-center mb-5'

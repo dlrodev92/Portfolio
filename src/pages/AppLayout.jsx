@@ -12,13 +12,14 @@ export default function AppLayout() {
       <div className='w-screen h-screen grid grid-cols-appLayout grid-rows-appLayout p-7 lg:p-1 scrollbar-hide '>
         <div className='col-start-1 col-span-6 row-start-1 row-span-5 lg:col-start-2 lg:col-span-4 lg:row-start-2 lg:row-span-4 bg-blueBackground flex lg:flex-row flex-col justify-end lg:rounded-[50px] rounded-[20px] lg:shadow-inner'>
           <div className="h-[10%] flex justify-center gap-10 items-center lg:flex-col lg:items-center lg:justify-center lg:w-[25%] lg:h-full lg:gap-5">
-            <img className="w-[60px] lg:w-[60%] xs:ml-2 mb-1" src="https://i.ibb.co/3cn3jgR/F2-F2-F2-10.png" alt="profile.pic" />
+            <img className="w-[60px] lg:w-[60%] xs:ml-2 mb-1" src="https://i.ibb.co/C2gdXgb/user.webp"
+            loading="lazy" alt="profile.pic" />
             <div className="flex flex-col gap-1 justify-center items-center">
               <h1 className="font-Jost tracking-wider hidden lg:block min-[1200px]:text-[130%] lg:text-[100%]  text-white font-bold">David Lopez Rodriguez</h1>
               <h2 className="font-Jost tracking-wider hidden lg:block max-[1200px]:text-[95%] lg:text-[85%]  text-white">Junior Full Stack Developer</h2>
             </div>
             <div className=" flex items-start justify-center ml-[-40px] lg:ml-[1px] gap-3 lg:items-center lg:justify-center lg:gap-5 ">
-            <a href="https://www.linkedin.com/in/dave-rodriguez-b27691216/">
+            <a href="https://www.linkedin.com/in/david-lopez-b27691216/">
               <FontAwesomeIcon icon={faLinkedin} className='text-[25px] lg:text-[30px] text-white hover:scale-125 duration-500 cursor-pointer'/>
               </a>
               <a href="https://github.com/dlrodev92">

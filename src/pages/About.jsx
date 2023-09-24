@@ -7,11 +7,12 @@ export default function About() {
   }
   return (
     <div className="h-[100%] w-full flex flex-col items-center justify-start rounded-b-[20px] lg:rounded-[50px] overflow-y-scroll scrollbar-hide gap-10">
-    <div className="w-full grid grid-cols-6 grid-rows-6 ">
+    <div className="w-full grid grid-cols-6 grid-rows-6">
         <motion.img 
-        src="https://i.ibb.co/2Mkztqz/Untitled-850-650px-650-850px-650-700px-3.png"
+        src="https://i.ibb.co/SdyDfxJ/Untitled-850-650px-650-850px-650-700px-3.webp"
         alt="david picture" 
-        className="row-start-1 row-span-3 col-start-2 md:col-start-3 w-[250px] col-span-3"
+        loading='lazy'
+        className="row-start-1 row-span-3 col-start-2 w-[250px] md:col-start-3 col-span-3"
         initial={{ x: '100%' }}
         animate={{ x: 0 }}
         exit={{ x: '100%' }}
@@ -54,7 +55,7 @@ export default function About() {
           Timeline
         </h1>
         <div className=' row-start-2 row-span-7 col-start-7 col-span-2 flex flex-col justify-center items-center'>
-          <div className='bg-blueBackground w-[3%] h-full'></div>
+          <div className='bg-blueBackground w-[3%] mr-[40%] sm:mr-0 h-full'></div>
         </div>
         <motion.h3 className='text-xl md:text-[2rem] font-Jost font-bold text-black row-start-2 col-start-8 '
         initial={{ opacity: 0 }}
@@ -69,7 +70,7 @@ export default function About() {
         > <p className='text-sm md:text-md lg:text-lg font-jost text-white ml-[25px]'>
           I finished my studies in the culinary arts and began my career in the hospitality industry.
           </p>
-          <img src="https://i.ibb.co/CJd5Mdn/Untitled-design-25.png" alt="picture" className='w-[20%]' />
+          <img src="https://i.ibb.co/CJd5Mdn/Untitled-design-25.png" alt="picture" loading='lazy' className='w-[20%]' />
         </motion.div>
         <motion.h3 className='text-xl md:text-[2rem] font-Jost font-bold text-black row-start-3 col-start-8 '
         initial={{ opacity: 0 }}
@@ -84,7 +85,7 @@ export default function About() {
         > <p className='text-sm md:text-md lg:text-lg font-jost text-black ml-[25px]'>
           I got married! and also started feeling compelled by moving abroad and exploring new opportunities. Started to learn English.
           </p>
-          <img src="https://i.ibb.co/gwtBfPM/Untitled-design-26.png" alt="picture" className='w-[20%]' />
+          <img src="https://i.ibb.co/gwtBfPM/Untitled-design-26.png" alt="picture" loading='lazy' className='w-[20%]' />
         </motion.div>
         <motion.h3 className='text-xl md:text-[2rem] font-Jost font-bold text-black row-start-4 col-start-8 '
         initial={{ opacity: 0 }}
@@ -100,7 +101,7 @@ export default function About() {
           <p className='text-sm md:text-md lg:text-lg font-jost text-white ml-[25px]'>
           I moved to Bournemouth where I worked as a waiter and bartender in a high-end hotel. I also started to learn Portuguese.
           </p>
-          <img src="https://i.ibb.co/bHJJdpq/Untitled-design-27.png" alt="picture" className='w-[20%]' />
+          <img src="https://i.ibb.co/bHJJdpq/Untitled-design-27.png" alt="picture" loading='lazy' className='w-[20%]' />
         </motion.div>
         <motion.h3 className='text-xl md:text-[2rem] font-Jost font-bold text-black row-start-5 col-start-8 '
         initial={{ opacity: 0 }}
@@ -116,7 +117,7 @@ export default function About() {
           <p className='text-sm md:text-md xs:text-[0.5rem] lg:text-lg font-jost text-black ml-[25px]'>
           During Covid, I decided to explore new avenues of personal and professional development. Although my language degree at the Open University didn't progress as planned, I seized the opportunity to redirect my focus. I embarked on an journey into the realms of marketing, copywriting, and email marketing.
           </p>
-          <img src="https://i.ibb.co/2hYnf1p/Untitled-design-28.png" alt="picture" className='w-[20%]' />
+          <img src="https://i.ibb.co/2hYnf1p/Untitled-design-28.png" alt="picture" loading='lazy' className='w-[20%]' />
         </motion.div>
         <motion.h3 className='text-xl md:text-[2rem] font-Jost font-bold text-black row-start-6 col-start-8 '
         initial={{ opacity: 0 }}
@@ -132,7 +133,7 @@ export default function About() {
           <p className='text-sm md:text-md lg:text-lg xs:text-[0.5rem] font-jost text-white ml-[25px]'>
           Moved to London. I found myself back in the vibrant world of restaurants and hotels. Alongside my work in the hospitality sector, I also ventured into the realm of freelancing, offering my expertise in email marketing for e-commerce sites and pursuing copywriting as a rewarding side hustle.
           </p>
-          <img src="https://i.ibb.co/Hz2GNMD/Untitled-design-29.png" alt="picture" className='w-[20%]' />
+          <img src="https://i.ibb.co/Hz2GNMD/Untitled-design-29.png" alt="picture" loading='lazy' className='w-[20%]' />
         </motion.div>
         <motion.h3 className='text-xl md:text-[2rem] font-Jost font-bold text-black row-start-7 col-start-8 '
         initial={{ opacity: 0 }}
@@ -148,7 +149,7 @@ export default function About() {
           <p className='text-sm md:text-md lg:text-lg font-jost xs:text-[0.5rem] text-black ml-[25px]'>
           Got hired at Harrods while exploring my next career move. It was during my time there that I stumbled upon the fascinating world of coding. I embarked on a journey of learning HTML, CSS, and JavaScript, and learned the foundations of web development.
           </p>
-          <img src="https://1000marcas.net/wp-content/uploads/2021/06/Harrods-Logo.png" alt="picture" className='w-[20%] font-color-blueBackground' />
+          <img src="https://1000marcas.net/wp-content/uploads/2021/06/Harrods-Logo.png" loading='lazy' alt="picture" className='w-[20%] font-color-blueBackground' />
         </motion.div>
         <motion.h3 className='text-xl md:text-[2rem] font-Jost font-bold text-black row-start-8 col-start-8 '
         initial={{ opacity: 0 }}
@@ -164,7 +165,7 @@ export default function About() {
           <p className='text-sm md:text-md lg:text-lg font-jost text-white ml-[25px]'>
           The moment has finally arrived! Armed with my graduation from the school of code boot camp and my self-taught skills, I am now fully prepared to launch my career as a developer. 
           </p>
-          <img src="https://i.ibb.co/Gx4Q21j/Graphic-Design-2.png" alt="picture" className='w-[20%]' />
+          <img src="https://i.ibb.co/Gx4Q21j/Graphic-Design-2.png" alt="picture" loading='lazy' className='w-[20%]' />
         </motion.div>
       </div>
       <div className='flex flex-col justify-center items-center w-full gap-3 mb-10'>

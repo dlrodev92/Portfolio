@@ -15,25 +15,31 @@ export default function Portfolio() {
         <div className="w-full h-full flex justify-center flex-wrap gap-5 p-5 mb-[300px]">
         <ProjCard
         title="Mighty Mini Minds"
-        image="https://i.ibb.co/mHxVXVB/mmm-hero.png"
+        image="https://i.ibb.co/vHXh0cr/mmm-hero.webp"
         linkPage="/MigthyMiniMinds"
         overlay="bg-mmm"
         />
         <ProjCard
         title="R S P L S"
-        image="https://i.ibb.co/74GLC8G/2.png"
+        image="https://i.ibb.co/DDnpQhC/bigbang.webp"
         linkPage="/bigBang"
         overlay="bg-bigbang"
         />
         <ProjCard
         title="This.Portfolio"
-        image="https://i.ibb.co/k5W5fqW/this-Portfolio.png"
+        image="https://i.ibb.co/XWGFLLD/this-Portfolio.webp"
         linkPage="/ThisPortfolio"
         overlay="bg-blueBackground"
         />
         <ProjCard
+        title="El Dorado"
+        image="https://i.ibb.co/QfrskwF/Screenshot-Capture-2023-09-24-00-43-22.webp"
+        linkPage="/ElDorado"
+        overlay="bg-yellow-700"
+        />
+        <ProjCard
         title="Comming Soon..."
-        image="https://i.ibb.co/7zYV5w1/this-Portfolio-2.png"
+        image="https://i.ibb.co/KF218Mm/post-gpt.webp"
         linkPage="/Portfolio"
         overlay="bg-black"
         />

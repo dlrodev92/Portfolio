@@ -6,6 +6,7 @@ import About from "../pages/About";
 import MigthyMiniMinds from "../pages/MigthyMiniMinds";
 import BigBang from "../pages/BigBang";
 import ThisPortfolio from "../pages/ThisPortfolio";
+import ElDorado from "../pages/ElDorado";
 import {
     Route,
     Routes,
@@ -26,6 +27,7 @@ export default function RoutesAnimated(){
             <Route path="MigthyMiniMinds" element={<MigthyMiniMinds/>} />
             <Route path="ThisPortfolio" element={<ThisPortfolio/>} />
             <Route path="BigBang" element={<BigBang/>} />
+            <Route path="ElDorado" element={<ElDorado/>} />
         </Route>
       </Routes>
     )

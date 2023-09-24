@@ -1,8 +1,8 @@
 import {motion} from "framer-motion"
 import SkillBouble from "../components/SkillBouble"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import{faHtml5, faCss3, faReact, faSquareJs,faNode } from '@fortawesome/free-brands-svg-icons'
-import{faTruckFast, faTextHeight, faDatabase} from '@fortawesome/free-solid-svg-icons'
+import{faHtml5, faCss3, faReact, faSquareJs, faNode, faJava } from '@fortawesome/free-brands-svg-icons'
+import{faTruckFast, faTextHeight, faDatabase, faLeaf } from '@fortawesome/free-solid-svg-icons'
 
 export default function Home() {
     return (
@@ -116,8 +116,9 @@ export default function Home() {
                 
                 </motion.h1>
                 <motion.img 
-                src="https://i.ibb.co/9HFf4fK/2.png" 
+                src="https://i.ibb.co/Sd0fc9H/picture.webp" 
                 alt="dave_face" 
+                loading="lazy"
                 className="lg:w-[20%] w-[30%] rounded-2xl mt-[-20px] "
                 initial={{ x: '-100%' }}
                 animate={{ x: 0 }}
@@ -137,13 +138,13 @@ export default function Home() {
                    <h3 className="lg:text-[1.3rem] text-[1rem] italic font-Jost">- "I develop dynamic and responsive web applications using React".</h3>
                 </li>
                 <li className="list-none">
-                   <h3 className="lg:text-[1.3rem] text-[1rem] italic font-Jost">- "I create secure backend applications using NodeJs and SQL".</h3>
+                   <h3 className="lg:text-[1.3rem] text-[1rem] italic font-Jost">- "I create secure backend applications using NodeJs or Spring and SQL".</h3>
                 </li>
                 <li className="list-none">
                    <h3 className="lg:text-[1.3rem] text-[1rem] italic font-Jost">- "I'm currently learning JAVA to expand my knowledge of the web".</h3>
                 </li>
             </motion.div>
-            <motion.div className="flex flex-col justify-start items-center mt-[-25px]"
+            <motion.div className="flex flex-col justify-start items-center mt-[-43px]"
             initial={{ x: '-100%' }}
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
@@ -153,7 +154,7 @@ export default function Home() {
                 >
                     My Skills
                 </h1>
-            <div className="w-full h-full grid grid-cols-4 grid-rows-4 gap-2 p-5 ">
+            <div className="w-full h-full grid grid-cols-4 grid-rows-5 gap-2 p-5 ">
                     <SkillBouble
                     name="HTML"
                     icon={<FontAwesomeIcon icon={faHtml5} />}
@@ -209,6 +210,20 @@ export default function Home() {
                     grid=" ml-[25%] mr-[25%] xs:mr-[0%] xs:ml-[0%]  col-start-3 col-span-2 row-start-2 row-span-1"
                     text="text-[85%] xs:text-[70%] lg:text-[100%]"
                     color="bg-yellow-300"
+                    />
+                    <SkillBouble
+                    name="Spring Boot"
+                    icon={<FontAwesomeIcon icon={faLeaf} />}
+                    grid=" ml-[25%] mr-[25%] xs:mr-[0%] xs:ml-[0%]  col-start-3 col-span-2 row-start-5 row-span-1"
+                    text="text-[85%] xs:text-[70%] lg:text-[100%]"
+                    color="bg-green-400"
+                    />
+                    <SkillBouble
+                    name="Java"
+                    icon={<FontAwesomeIcon icon={faJava} />}
+                    grid=" ml-[25%] mr-[25%] xs:mr-[0%] xs:ml-[0%]  col-start-1 col-span-2 row-start-5 row-span-1"
+                    text="text-[85%] xs:text-[70%] lg:text-[100%]"
+                    color="bg-red-400"
                     />
                    
             </div>
