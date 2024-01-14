@@ -1,232 +1,89 @@
 import {motion} from "framer-motion"
-import SkillBouble from "../components/SkillBouble"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import{faHtml5, faCss3, faReact, faSquareJs, faNode, faJava } from '@fortawesome/free-brands-svg-icons'
-import{faTruckFast, faTextHeight, faDatabase, faLeaf } from '@fortawesome/free-solid-svg-icons'
+
+import SkillsSection from '../components/SkillsSection'
+import { useState, useEffect } from 'react'
+
 
 export default function Home() {
+    const [specialty, setSpecialty] = useState("Python");
+
+    const [statements, setStatements] = useState("I develop dynamic and responsive web applications using React");
+
+    const handleTimerSpecialty = () => {
+    const specialties = [ "React", "NodeJs", "Django", "Git" ,"JavaScript", "Python",];
+    const statements = ["I create secure backend applications using NodeJs and Django", "I'm currently expanding my knowledge of web arquitecture  through studies on the Platzi Platform", "I use Git to track and manage my projects", "I've worked for over 6 months on different projects as freelancer", "I develop dynamic and responsive web applications using React",]
+    let i = 0;
+    let a = 0
+
+    const intervalId = setInterval(() => {
+        setSpecialty(specialties[i]);
+        i = (i + 1) % specialties.length;
+        setStatements(statements[a]);
+        a = (a + 1) % statements.length;
+    }, 3500);
+
+    };
+
+    useEffect(() => {
+    handleTimerSpecialty();
+
+    // If you want to clear the interval when the component unmounts, you can return a cleanup function:
+    return () => clearInterval();
+    }, []);
+
+ 
+
     return (
         <div className="h-full w-[100%] flex flex-col rounded:[20px] lg:rounded-[50px] overflow-y-scroll scrollbar-hide">
-            <div className="col-start-1 row-start-1 col-span-4 flex flex-col justify-center items-center">
-                 <motion.h1 
-                 className="md:text-[300%] text-[200%] font-Jost break-normal mt-3"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ 
-                        duration: 1, 
-                        delay: 0.5 
-                    }}
-                 >
-                <motion.span
-                    style={{ marginRight: '0.1em' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, repeat: 6, delay: 0.5}}
-                >
-                    D
-                </motion.span>
-                <motion.span
-                    style={{ marginRight: '0.1em' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.2 ,repeat: 6 }}
-                >
-                    a
-                </motion.span>
-                <motion.span
-                    style={{ marginRight: '0.1em' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.4 ,repeat: 6 }}
-                >
-                    v
-                </motion.span>
-                <motion.span
-                    style={{ marginRight: '0.1em' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.6 ,repeat: 6 }}
-                >
-                    i
-                </motion.span>
-                <motion.span
-                    style={{ marginRight: '0.1em' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 1 ,repeat: 6 }}
-                > 
-                d
-                </motion.span>
-                <motion.span
-                    style={{ marginRight: '0.1em' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.8 ,repeat: 6 }}
-                >
-                    &nbsp;
-                </motion.span>
-                <motion.span
-                    style={{ marginRight: '0.1em' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 1.2 ,repeat: 5 }}
-                >
-                    L
-                </motion.span>
-                <motion.span
-                    style={{ marginRight: '0.1em' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 1.4 ,repeat: 5 }}
-                >
-                    ó
-                </motion.span>
-                <motion.span
-                    style={{ marginRight: '0.1em' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 1.6 ,repeat: 5}}
-                >
-                    p
-                </motion.span>
-                <motion.span
-                    style={{ marginRight: '0.1em' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 1.8 ,repeat: 5 }}
-                >
-                    e
-                </motion.span>
-                <motion.span
-                    style={{ marginRight: '0.1em' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 2 ,repeat: 5 }}
-                >
-                    z
-                </motion.span>
-                <motion.span
-                    style={{ marginRight: '0.1em' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 2.2 ,repeat: 4 }}
-                >
-                    &nbsp;
-                </motion.span>
-                
-                </motion.h1>
-                <motion.img 
-                src="https://i.ibb.co/Sd0fc9H/picture.webp" 
-                alt="dave_face" 
-                loading="lazy"
-                className="lg:w-[20%] w-[30%] rounded-2xl mt-[-20px] "
-                initial={{ x: '-100%' }}
-                animate={{ x: 0 }}
-                exit={{ x: '100%' }}
-                transition={{ duration: 0.7 }}
-                />
+            <div className="bg-[url('https://i.ibb.co/QbhQdHS/Untitled-design-25.webp')] md:bg-[url('https://i.ibb.co/k6SN0C4/Untitled-design-23.webp')] h-full w-full bg-cover bg-no-repeat bg-bottom md:bg-center">
+                <div className="h-full w-full bg-blueBackground bg-opacity-20 flex items-end md:items-start justify-center  ">
+                    <motion.div className="flex flex-col justify-around items-center p-5  h-[30%] w-[90%] md:w-[85%] bg-white bg-opacity-90 rounded-[10px] border-4 border-blueBackground mb-2 mt-2"
+                        initial={{ x: '-100%' }}
+                        animate={{ x: 0 }}
+                        exit={{ x: '100%' }}
+                        transition={{ duration: 0.7 }}>
+                            <h1 className="lg:text-[1.4rem] text-[1rem] font-Jost bold relative border-b-8 border-blueBackground text-center">
+                                Hi! I'm David, a junior web developer specializing in
+                            <motion.span 
+                                key={specialty}
+                                className="ml-2"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 0.7 }}
+                            >
+                              {specialty}
+                            </motion.span>
+                            </h1>
+                            
+                            <motion.li 
+                                className="list-none"
+                                key={statements}
+                                initial={{ opacity:0 , y: '-100%' }}
+                                animate={{ opacity:1 , y: 0 }}
+                                exit={{ opacity:0 , y: '100%' }}
+                                transition={{ duration: 0.7 }}
+                                >
+                            <h3 className="lg:text-[1.2rem] text-[0.9rem] italic font-Jost"> {`"${statements}"`} </h3>
+                            </motion.li>
+                    </motion.div>
+                </div>
             </div>
-            <motion.div className="flex flex-col justify-around items-center p-5 mt-5"
-            initial={{ x: '-100%' }}
-            animate={{ x: 0 }}
-            exit={{ x: '100%' }}
-            transition={{ duration: 0.7 }}>
-                <h1 className="lg:text-[1.8rem] text-[1.4rem] font-Jost -bold relative border-b-8 border-blueBackground text-center">
-                    I'm a junior web developer specializing in the MERN stack.
-                </h1>
-                <li className="list-none">
-                   <h3 className="lg:text-[1.3rem] text-[1rem] italic font-Jost">- "I develop dynamic and responsive web applications using React".</h3>
-                </li>
-                <li className="list-none">
-                   <h3 className="lg:text-[1.3rem] text-[1rem] italic font-Jost">- "I create secure backend applications using NodeJs or Spring and SQL".</h3>
-                </li>
-                <li className="list-none">
-                   <h3 className="lg:text-[1.3rem] text-[1rem] italic font-Jost">- "I'm currently learning JAVA to expand my knowledge of the web".</h3>
-                </li>
-            </motion.div>
-            <motion.div className="flex flex-col justify-start items-center mt-[-43px]"
+            <motion.div className="flex flex-col justify-start items-center h-[30%]"
             initial={{ x: '-100%' }}
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ duration: 0.7 }}
             >
-                <h1 className="lg:text-[1.8rem] text-[1.4rem] font-Jost -bold relative border-b-8 border-blueBackground mt-9"
+                <h2 className="lg:text-[1.8rem] text-[1.2rem] font-Jost -bold relative border-b-8 border-blueBackground "
                 >
                     My Skills
-                </h1>
-            <div className="w-full h-full grid grid-cols-4 grid-rows-5 gap-2 p-5 ">
-                    <SkillBouble
-                    name="HTML"
-                    icon={<FontAwesomeIcon icon={faHtml5} />}
-                    grid="col-start-2 xs:col-span-2 col-span-1 row-start-1 row-span-1"
-                    text="text-[85%] lg:text-[100%] "
-                    color="bg-html"
-                    />
-                    <SkillBouble
-                    name="Typescript"
-                    icon={<FontAwesomeIcon icon={faTextHeight} />}
-                    grid="col-start-4 xs:col-span-2 col-span-1 row-start-1 row-span-1"
-                    text="text-[65%] lg:text-[100%]"
-                    color="bg-ts"
-                    />
-                    <SkillBouble
-                    name="JavaScript"
-                    icon={<FontAwesomeIcon icon={faSquareJs} />}
-                    grid="col-start-1 col-span-1 xs:col-span-2 row-start-2 row-span-1"
-                    text="text-[65%] lg:text-[100%]"
-                    color="bg-js"
-                    />
-                    <SkillBouble
-                    name="NodeJs"
-                    icon={<FontAwesomeIcon icon={faNode} />}
-                    grid="col-start-3 col-span-1 row-start-2 row-span-1 xs:row-start-4 xs:col-span-2 xs:col-start-3"
-                    text="text-[85%] lg:text-[100%] xs:text-[70%]"
-                    color="bg-node"
-                    />
-                    <SkillBouble
-                    name="CSS"
-                    icon={<FontAwesomeIcon icon={faCss3} />}
-                    grid="col-start-2 col-span-1 xs:col-span-2 row-start-3 row-span-1"
-                    text="text-[85%] lg:text-[100%] xs:text-[70%]"
-                    color="bg-tailwind"
-                    />
-                    <SkillBouble
-                    name="Express"
-                    icon={<FontAwesomeIcon icon={faTruckFast} />}
-                    grid="col-start-4 col-span-1 xs:col-span-2 row-start-3 row-span-1"
-                    text="text-[85%] xs:text-[70%]"
-                    color="bg-express"
-                    />
-                    <SkillBouble
-                    name="React"
-                    icon={<FontAwesomeIcon icon={faReact} />}
-                    grid="ml-[25%] mr-[25%] col-start-2 col-span-2 xs:mr-[0%] xs:ml-[0%] xs:col-start-1 xs:row-start-4 row-span-1"
-                    text="text-[85%] lg:text-[100%] xs:text-[70%]"
-                    color="bg-react"
-                    />
-                    <SkillBouble
-                    name="SQL"
-                    icon={<FontAwesomeIcon icon={faDatabase} />}
-                    grid=" ml-[25%] mr-[25%] xs:mr-[0%] xs:ml-[0%]  col-start-3 col-span-2 row-start-2 row-span-1"
-                    text="text-[85%] xs:text-[70%] lg:text-[100%]"
-                    color="bg-yellow-300"
-                    />
-                    <SkillBouble
-                    name="Spring Boot"
-                    icon={<FontAwesomeIcon icon={faLeaf} />}
-                    grid=" ml-[25%] mr-[25%] xs:mr-[0%] xs:ml-[0%]  col-start-3 col-span-2 row-start-5 row-span-1"
-                    text="text-[85%] xs:text-[70%] lg:text-[100%]"
-                    color="bg-green-400"
-                    />
-                    <SkillBouble
-                    name="Java"
-                    icon={<FontAwesomeIcon icon={faJava} />}
-                    grid=" ml-[25%] mr-[25%] xs:mr-[0%] xs:ml-[0%]  col-start-1 col-span-2 row-start-5 row-span-1"
-                    text="text-[85%] xs:text-[70%] lg:text-[100%]"
-                    color="bg-red-400"
-                    />
-                   
-            </div>
+                </h2>
+
+                <div className="w-full p-3">
+                    <SkillsSection/>
+                </div>
+            
             </motion.div>
 
 

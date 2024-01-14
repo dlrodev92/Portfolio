@@ -8,7 +8,7 @@ export default function ProjCard (props){
     }
     return(
         
-        <motion.div className="w-[45%] xs:min-w-[340px] min-w-[400px] h-[70%] aspect-video flex flex-col items-center gap-3  rounded-[25px] shadow-xl p-2 relative "
+        <motion.div className="xs:min-w-[340px] h-[270px] flex flex-col items-center gap-3  rounded-[25px] shadow-xl p-2 relative "
         initial={{ x: '-100%' }}
         animate={{ x: 0 }}
         exit={{ x: '100%' }}
@@ -18,7 +18,7 @@ export default function ProjCard (props){
                     whileHover={{x: 0, opacity: 0.9}}
                     transition={{ duration: 0.6 }}
                 >
-                    <h1 className='absolute text-[2.8rem] font-Jost font-bold text-white opacity-[200%]'>{props.title}</h1>
+                    <h1 className='absolute text-[1.9rem] font-Jost font-bold text-white opacity-[200%]'>{props.title}</h1>
                 </motion.div>
                 <img
                  src={props.image} 
@@ -26,7 +26,7 @@ export default function ProjCard (props){
                  alt="project image"
                  />
             </div>
-            <button className="font-Jost tracking-wider text-white border-2 bg-blueBackground font-bold p-1 w-[30%] rounded-[35px] h-[65px] flex items-center justify-center hover:scale-110 duration-500 cursor-pointer shadow-lg"
+            <button className="font-Jost tracking-wider text-white border-2 bg-blueBackground font-bold p-1 w-[30%] rounded-[25px] h-[45px] text-[0.9rem] flex items-center justify-center hover:scale-110 duration-500 cursor-pointer shadow-lg"
             onClick={navigateTo}
             >More Info
             </button>

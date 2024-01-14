@@ -3,21 +3,39 @@ import ProjCard from "../components/ProjCard"
 
 export default function Portfolio() {
     return (
-        <div className="h-[100%] w-full flex flex-col items-center justify-start rounded:[20px] lg:rounded-[50px] gap-10 overflow-y-scroll scrollbar-hide">
-            <motion.h1 className="lg:text-[4rem] text-[3rem] font-Jost -bold relative border-b-8 border-blueBackground text-center"
+    <div className="h-[100%] w-full flex flex-col items-center justify-start rounded:[20px] lg:rounded-[50px] gap-10 overflow-y-scroll scrollbar-hide">
+        <motion.h1 className="lg:text-[4rem] text-[3rem] font-Jost -bold relative border-b-8 border-blueBackground text-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ 
               duration: 0.7, 
           }}>
-        Projects
+            Projects
         </motion.h1>
-        <div className="w-full h-full flex justify-center flex-wrap gap-5 p-5 mb-[300px]">
+        <div className="w-full h-auto flex justify-center flex-wrap gap-5 p-5">
         <ProjCard
         title="Mighty Mini Minds"
         image="https://i.ibb.co/vHXh0cr/mmm-hero.webp"
         linkPage="/MigthyMiniMinds"
         overlay="bg-mmm"
+        />
+        <ProjCard
+        title="Distraction Defender"
+        image="https://i.ibb.co/5rJWtjD/D.png"
+        linkPage="/MigthyMiniMinds"
+        overlay="bg-blue-400"
+        />
+        <ProjCard
+        title="El Dorado"
+        image="https://i.ibb.co/QfrskwF/Screenshot-Capture-2023-09-24-00-43-22.webp"
+        linkPage="/ElDorado"
+        overlay="bg-yellow-700"
+        />
+        <ProjCard
+        title="Comming Soon..."
+        image="https://i.ibb.co/CQm0ZHD/TTY3.png"
+        linkPage="/Portfolio"
+        overlay="bg-red-300"
         />
         <ProjCard
         title="R S P L S"
@@ -31,18 +49,7 @@ export default function Portfolio() {
         linkPage="/ThisPortfolio"
         overlay="bg-blueBackground"
         />
-        <ProjCard
-        title="El Dorado"
-        image="https://i.ibb.co/QfrskwF/Screenshot-Capture-2023-09-24-00-43-22.webp"
-        linkPage="/ElDorado"
-        overlay="bg-yellow-700"
-        />
-        <ProjCard
-        title="Comming Soon..."
-        image="https://i.ibb.co/KF218Mm/post-gpt.webp"
-        linkPage="/Portfolio"
-        overlay="bg-black"
-        />
+        
         </div>
         </div>
     )

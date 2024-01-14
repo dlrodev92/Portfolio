@@ -113,7 +113,7 @@ export default function ElDorado() {
                   initial={{ opacity: 0.1 }}
                   whileInView={{ opacity: 1}}
                   transition={{ duration: 1 }}>
-                      <a href="https://melodic-gecko-3d8c4a.netlify.app/" target="_blank"><img src={screenWidth > 1023 ? "https://i.ibb.co/02vpKcw/senales-3.webp" : "https://i.ibb.co/wMBT2b7/senales-4.webp"} alt="migthywebsite" className="w-[200px] p-5 hover:scale-110  duration-500 cursor-pointer "/></a>
+                      <a href="https://eldoradofx.co.uk/" target="_blank"><img src={screenWidth > 1023 ? "https://i.ibb.co/02vpKcw/senales-3.webp" : "https://i.ibb.co/wMBT2b7/senales-4.webp"} alt="migthywebsite" className="w-[200px] p-5 hover:scale-110  duration-500 cursor-pointer "/></a>
                   </motion.div>
                   </motion.div>
                 </motion.div>
