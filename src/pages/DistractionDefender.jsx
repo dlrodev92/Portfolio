@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import SkillBouble from './../components/SkillBouble';
 import Carrousel from "./../components/Carrousel";
-import {data} from "../data/migthyMiniMinds.data";
+import {data} from "../data/distractionDefender.js";
 import { useEffect, useState } from "react";
 
-export default function MigthyMiniMinds() {
+export default function DistractionDefender() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   
   useEffect(() => {
@@ -129,8 +129,8 @@ function getTakeaways() {
             initial={{ opacity: 0.1 }}
             whileInView={{ opacity: 1}}
             transition={{ duration: 1 }}>
-                <a href="https://mightyminiminds.netlify.app/" target="_blank" ><img src={screenWidth > 1023 ? "https://i.ibb.co/2jQ7Ngg/4.png" : "https://i.ibb.co/DfpcBq4/2.png"} alt="migthywebsite" className="w-[200px] p-5 hover:scale-110  duration-500 cursor-pointer "/></a>
-                <a href="https://github.com/dlrodev92/migthy_mini_minds" target="_blank"><img src="https://i.ibb.co/zhD6KVZ/Untitled-design-20.png" alt="github" className="w-[125px] h-[125px]  p-5 hover:scale-110  duration-500 cursor-pointer " /></a>
+                <a href="https://distractiondefender.netlify.app/" target="_blank" ><img src={screenWidth > 1023 ? "https://i.ibb.co/2jQ7Ngg/4.png" : "https://i.ibb.co/DfpcBq4/2.png"} alt="migthywebsite" className="w-[200px] p-5 hover:scale-110  duration-500 cursor-pointer "/></a>
+                <a href="https://github.com/dlrodev92/Distraction_defender_Client" target="_blank"><img src="https://i.ibb.co/zhD6KVZ/Untitled-design-20.png" alt="github" className="w-[125px] h-[125px]  p-5 hover:scale-110  duration-500 cursor-pointer " /></a>
             </motion.div>
             </motion.div>
           </div>

@@ -7,6 +7,7 @@ import MigthyMiniMinds from "../pages/MigthyMiniMinds";
 import BigBang from "../pages/BigBang";
 import ThisPortfolio from "../pages/ThisPortfolio";
 import ElDorado from "../pages/ElDorado";
+import DistractionDefender from "../pages/DistractionDefender";
 import {
     Route,
     Routes,
@@ -28,6 +29,7 @@ export default function RoutesAnimated(){
             <Route path="ThisPortfolio" element={<ThisPortfolio/>} />
             <Route path="BigBang" element={<BigBang/>} />
             <Route path="ElDorado" element={<ElDorado/>} />
+            <Route path="DistractionDefender" element={<DistractionDefender/>} />
         </Route>
       </Routes>
     )

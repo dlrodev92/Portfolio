@@ -22,7 +22,7 @@ export default function Portfolio() {
         <ProjCard
         title="Distraction Defender"
         image="https://i.ibb.co/5rJWtjD/D.png"
-        linkPage="/MigthyMiniMinds"
+        linkPage="/DistractionDefender"
         overlay="bg-blue-400"
         />
         <ProjCard

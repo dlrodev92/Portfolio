@@ -56,11 +56,23 @@ export const backendData = [
             frameworksLibraries: ['Tailwind', 'Material UI', 'Styled Components', 'Sass'],
             image:'https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-css/sta-je-css.png'
         },
-        {
-            name: 'HTML',
-            certifications: ['School of Code Bootcamp'],
+        {  
+            name: 'Sass',
+            certifications: ['Self-taught'],
             learningJourney: 'Self-taught, personal projects and Freelance Work Experience', 
-            image:'https://webdevelop.pro/images/blog/simple-short-best-html-practice.jpeg'
-        }
+            image:'https://cdn.mos.cms.futurecdn.net/TTgVoW3Q5WPkMBHi2VD59Q.jpg'
+        },
+        {
+          name: 'Tailwind',
+          certifications: ['Self-taught'],
+          learningJourney: 'Self-taught, personal projects and Freelance Work Experience', 
+          image:'https://tailwindcss.com/_next/static/media/tailwindui-small@75.8bb955b2.jpg'
+      },
+      {
+        name: 'HTML',
+        certifications: ['School of Code Bootcamp'],
+        learningJourney: 'Self-taught, personal projects and Freelance Work Experience', 
+        image:'https://webdevelop.pro/images/blog/simple-short-best-html-practice.jpeg'
+      },
 
       ]
