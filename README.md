@@ -49,7 +49,7 @@ Feel free to explore the various sections of my portfolio and check out the proj
 ## Contact
 If you would like to get in touch with me or discuss potential collaboration opportunities, you can reach me at:
 
-- Email: [your-email@example.com](dlrdev92@gmail.com)
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/dave-rodriguez-b27691216/)
+- Email: dlrdev92@gmail.com
+- LinkedIn: https://www.linkedin.com/in/dave-rodriguez-b27691216
 
 Thank you for visiting my web developer portfolio. I hope you find it informative and enjoyable!
