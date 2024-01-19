@@ -26,10 +26,13 @@ This section highlights the technologies and programming languages I'm proficien
 
 - HTML5
 - CSS3
+- Sass
 - JavaScript
 - React
 - Tailwind
 - Framer Motion
+- Python
+- Django
 - Git
 
 ## Usage
