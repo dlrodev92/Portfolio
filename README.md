@@ -15,9 +15,11 @@ This is a project developed individually to display the my skills and capabiliti
 ## Projects
 In this section, you'll find a list of my notable projects. Each project includes a brief description, technologies used, and a link to its live demo or source code. Feel free to explore them and see my work in action.
 
-- Project 1: Migthy Mini Minds | [Live Demo](https://migthyminiminds.netlify.app) | [Source Code](https://github.com/dlrodev92/Portfolio)
-- Project 2: Rock Papper Scissors Lizard Spock | [Live Demo](https://rsplsbigbang.netlify.app) | [Source Code](https://github.com/dlrodev92/migthy_mini_minds)
+- Project 1: Migthy Mini Minds | [Live Demo](https://mightyminiminds.netlify.app/) | [Source Code](https://github.com/dlrodev92/migthy_mini_minds)
+- Project 2: Rock Papper Scissors Lizard Spock | [Live Demo](https://rsplsbigbang.netlify.app) | [Source Code](https://github.com/dlrodev92/rock_scissors_papper)
 - Project 3: this.Portfolio | [Live Demo](https://davidlopezportfolio.netlify.app) | [Source Code](https://github.com/dlrodev92/Portfolio)
+- Project 4: Distraction Defender | [Live Demo](https://distractiondefender.netlify.app) | [Source Code](https://github.com/dlrodev92/Distraction_defender_Client)
+- Project 5: El Dorado | [Live Demo](https://eldoradofx.co.uk/) | 
 
 ## Technologies
 This section highlights the technologies and programming languages I'm proficient in. It demonstrates my versatility and ability to work with various tools and frameworks. Some of the key technologies I have experience with include:
