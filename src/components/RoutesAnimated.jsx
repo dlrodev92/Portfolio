@@ -8,6 +8,7 @@ import BigBang from "../pages/BigBang";
 import ThisPortfolio from "../pages/ThisPortfolio";
 import ElDorado from "../pages/ElDorado";
 import DistractionDefender from "../pages/DistractionDefender";
+import ShowsLatinos from "../pages/ShowsLatinos";
 import {
     Route,
     Routes,
@@ -30,6 +31,7 @@ export default function RoutesAnimated(){
             <Route path="BigBang" element={<BigBang/>} />
             <Route path="ElDorado" element={<ElDorado/>} />
             <Route path="DistractionDefender" element={<DistractionDefender/>} />
+            <Route path="ShowsLatinos" element={<ShowsLatinos/>} />
         </Route>
       </Routes>
     )

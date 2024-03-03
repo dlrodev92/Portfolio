@@ -18,6 +18,12 @@ export const backendData = [
             image:'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png'
         },
         {
+          name: 'Github',
+          certifications: ['Self-taught and School of Code Bootcamp'],
+          learningJourney: 'Self-taught, personal projects and colaboration on two projects as developer.',
+          image:'https://miro.medium.com/v2/resize:fit:1125/1*wotzQboYWAfaj-7bvGNIkQ.png'
+      },
+        {
           name: 'Node.js',
           certifications: ['School of Code Bootcamp'],
           learningJourney: 'Self-taught, personal projects and SOC Bootcamp graduation',
@@ -48,6 +54,13 @@ export const backendData = [
           learningJourney: 'Self-taught, personal projects, SOC Bootcamp graduation and Freelance Work Experience',
           frameworksLibraries: ['React Router', 'Framer Motion', 'React Testing Library', 'React Icons', 'React Bootstrap', 'React Scroll', 'framerMotion'],  
           image:'https://www.freecodecamp.org/news/content/images/2022/04/featured.jpg'
+        },
+        {
+          name: 'NextJs',
+          certifications: ['Self-taught'],
+          learningJourney: 'Self-taught, Freelance Work Experience',
+          frameworksLibraries: ['NextJsApi'],  
+          image:'https://images.ctfassets.net/c63hsprlvlya/IacLLeOBR5WCvdCPqKuff/6860b5cc464c4f54703a2befa3f706b4/nextjs3.webp'
         },
         {
             name:'Css',

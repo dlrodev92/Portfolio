@@ -1,10 +1,13 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { backendData, frontedData } from "../data/skills.data";
 
 const SkillsSection = () => {
   const [selectedLabel, setSelectedLabel] = useState(null);
   const [expandedSkills, setExpandedSkills] = useState({});
+
+  const backendRef = useRef(null);
+  const frontendRef = useRef(null);
 
   const toggleAccordion = (label) => {
     setSelectedLabel((prevLabel) => (prevLabel === label ? null : label));
@@ -22,13 +25,22 @@ const SkillsSection = () => {
     expanded: { height: 'auto' },
   };
 
+  useEffect(() => {
+    if (selectedLabel === 'backend' && backendRef.current) {
+      backendRef.current.scrollIntoView({ behavior: 'smooth' });
+    } else if (selectedLabel === 'frontend' && frontendRef.current) {
+      frontendRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [selectedLabel]);
+
   return (
     <div className="flex flex-col items-center gap-2 ">
       {/* Backend Skills */}
       <div className="w-[90%] p-2 border-2 border-blueBackground rounded-xl">
         <h3
-          className="text-[0.9rem] md:text-[1.1rem] font-bold  cursor-pointer flex items-center flex flex-col items-center justify-center gap-4"
+          className="text-[0.9rem] md:text-[1.1rem] font-bold  cursor-pointer flex items-center flex-col  justify-center gap-4"
           onClick={() => toggleAccordion('backend')}
+          ref={backendRef}
         >
           Backend {selectedLabel === 'backend' ? '🔽' : '🔼'}
         </h3>
@@ -74,6 +86,7 @@ const SkillsSection = () => {
         <h3
           className="text-[0.9rem] md:text-[1.1rem] font-bold cursor-pointer flex items-center"
           onClick={() => toggleAccordion('frontend')}
+          ref={frontendRef}
         >
           Frontend {selectedLabel === 'frontend' ? '🔽' : '🔼'}
         </h3>

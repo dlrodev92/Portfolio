@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import SkillBouble from './../components/SkillBouble';
-import Carrousel from "./../components/Carrousel";
-import {data} from "../data/bigBang.data";
+import SkillBouble from '../components/SkillBouble.jsx';
+import Carrousel from "../components/Carrousel.jsx";
+import {data} from "../data/showsLatinos.data.js";
 import { useEffect, useState } from "react";
 
-export default function MigthyMiniMinds() {
+export default function ShowsLatinos() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   
   useEffect(() => {
@@ -22,20 +22,21 @@ export default function MigthyMiniMinds() {
     function getImages() {
     const imageElements = data.carouselImages.map((image) => {
       return (
-        <motion.div className="item min-w-[550px] min-h-[250px] rounded-[25px] p-5 " key={image} 
+        <div className="item min-w-[550px] h-[400px] rounded-[25px] p-5 flex items-center justify-center" key={image}>
+        <motion.img src={image} className="w-[80%] h-[80%] rounded-[25px] pointer-events-none" alt="project img" loading="lazy"
         initial={{ opacity: 0.1 }}
         whileInView={{ opacity: 1}}
-        transition={{ duration: 2 }}>
-        <img src={image} className="w-[100%] h-[100%] rounded-[25px] pointer-events-none" loading="lazy" alt="img" />
-        </motion.div>
+        transition={{ duration: 2 }}/>
+        </div>
       );
     });
     return imageElements;
   }
 function getSkills() {
-  const skillElements = data.stackInfo.map((skill) => {
+  const skillElements = data.stackInfo.map((skill, index) => {
     return (
       <SkillBouble
+        key={index}
         name={skill.name}
         grid={skill.grid}
         text={skill.text}
@@ -46,9 +47,9 @@ function getSkills() {
   return skillElements;
 }
 function getTakeaways() {
-  const takeawayElements = data.takeaways.map((takeaway) => {
+  const takeawayElements = data.takeaways.map((takeaway, index) => {
     return (
-      <li className='lg:text-[1.1rem] text-[1rem] font-Jost'>{takeaway}</li>
+      <li key={index} className='lg:text-[1.1rem] text-[1rem] font-Jost italic'>&quot;{takeaway}&quot;</li>
     );
   });
   return takeawayElements;
@@ -61,49 +62,63 @@ function getTakeaways() {
         exit={{ scale: 0, opacity: 0 }}
         transition={{ duration: 0.5 }}
         >
+          <motion.h1 className='lg:text-[2rem] text-[1rem] font-Jost relative border-b-8 mb-5 border-red-500 text-center'
+          initial={{ opacity: 0.1 }}
+          whileInView={{ opacity: 1}}
+          transition={{ duration: 0.7 }}
+          >
+            Project on Progress
+          </motion.h1>
           <motion.h1 className='lg:text-[4rem] text-[3rem] font-Jost relative border-b-8 mb-5 border-blueBackground text-center'
           initial={{ opacity: 0.1 }}
           whileInView={{ opacity: 1}}
-          transition={{ duration: 0.7 }}>
+          transition={{ duration: 0.7 }}
+          >
             {data.title}
           </motion.h1>
-          <motion.img src={data.heroImage} alt='project image' className='w-[100%] bg-fixed' loading="lazy"
+          
+          <motion.img src={data.heroImage} alt='project image' className='w-[100%] bg-fixed'
           initial={{ opacity: 0.1 }}
           whileInView={{ opacity: 1}}
-          transition={{ duration: 0.7 }}/>
-          <div className='w-full bg-slate-200 flex flex-col justify-start md:justify-center items-center rounded-lg p-3'
-          initial={{ opacity: 0.1 }}
-          whileInView={{ opacity: 1}}
-          transition={{ duration: 0.7 }}>
+          transition={{ duration: 0.7 }}
+          loading="lazy"
+          />
+          <div className='w-full bg-slate-200 flex flex-col justify-start md:justify-center items-center rounded-lg p-3'>
             <motion.h2 className='lg:text-[3rem] text-[2rem] font-Jost border-b-8 border-blueBackground text-center mb-5'
             initial={{ opacity: 0.1 }}
             whileInView={{ opacity: 1}}
-            transition={{ duration: 0.7 }}>
+            transition={{ duration: 0.7 }}
+            >
               Project Overview
             </motion.h2>
             <motion.div className='w-full flex flex-col justify-center items-center'
             initial={{ opacity: 0.1 }}
             whileInView={{ opacity: 1}}
-            transition={{ duration: 0.7 }}
-            >
+            transition={{ duration: 0.7 }}>
               <h3 className='lg:text-[2rem] text-[1.8rem] font-Jost font-bold  text-center'>
                 Summary
               </h3>
               <p className='text-[1rem] text-center w-4/5 font-Jost'>
                 {data.summary}
               </p>
-              <h3 className='lg:text-[2rem] text-[1.8rem] font-Jost font-bold mt-5  text-center'>
+              <motion.h3 className='lg:text-[2rem] text-[1.8rem] font-Jost font-bold mt-5  text-center'
+              initial={{ opacity: 0.1 }}
+              whileInView={{ opacity: 1}}
+              transition={{ duration: 0.7 }}>
                 Stack
-              </h3>
+              </motion.h3>
               <motion.div className="w-[75%]  grid grid-cols-6 grid-rows-4 gap-2 p-5 "
               initial={{ opacity: 0.1 }}
               whileInView={{ opacity: 1}}
               transition={{ duration: 0.7 }}>
                 {getSkills()}
             </motion.div>
-            <h3 className='lg:text-[2rem] text-[1.8rem] font-Jost font-bold  text-center'>
+            <motion.h3 className='lg:text-[2rem] text-[1.8rem] font-Jost font-bold  text-center'
+            initial={{ opacity: 0.1 }}
+            whileInView={{ opacity: 1}}
+            transition={{ duration: 0.7 }}>
                 Takeaways
-            </h3>
+            </motion.h3>
             <motion.div className="flex justify-center items-center w-[100%]"
             initial={{ opacity: 0.1 }}
             whileInView={{ opacity: 1}}
@@ -123,8 +138,7 @@ function getTakeaways() {
             initial={{ opacity: 0.1 }}
             whileInView={{ opacity: 1}}
             transition={{ duration: 1 }}>
-                <a href="https://rsplsbigbang.netlify.app" target="_blank"><img src={screenWidth > 1023 ? "https://i.ibb.co/1zSWFTt/3.png" : "https://i.ibb.co/kXpk9D0/1.png"} alt="migthywebsite" className="w-[200px] p-5 hover:scale-110  duration-500 cursor-pointer "/></a>
-                <a href="https://github.com/dlrodev92/rock_scissors_papper" target="_blank"><img src="https://i.ibb.co/zhD6KVZ/Untitled-design-20.png" alt="github" className="w-[125px] h-[125px]  p-5 hover:scale-110  duration-500 cursor-pointer " /></a>
+              <a href="https://showslatinos24-production.up.railway.app/" target="_blank" rel="noreferrer"><img src={screenWidth > 1023 ? "https://i.ibb.co/2jQ7Ngg/4.png" : "https://i.ibb.co/DfpcBq4/2.png"} alt="migthywebsite" className="w-[200px] p-5 hover:scale-110  duration-500 cursor-pointer "/></a>
             </motion.div>
             </motion.div>
           </div>

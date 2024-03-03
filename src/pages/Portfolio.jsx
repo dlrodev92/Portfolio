@@ -32,9 +32,9 @@ export default function Portfolio() {
         overlay="bg-yellow-700"
         />
         <ProjCard
-        title="Comming Soon..."
-        image="https://i.ibb.co/CQm0ZHD/TTY3.png"
-        linkPage="/Portfolio"
+        title="Shows Latinos"
+        image="https://i.ibb.co/6sYTWKk/Screenshot-Capture-2024-03-03-11-24-19.webp"
+        linkPage="/ShowsLatinos"
         overlay="bg-red-300"
         />
         <ProjCard
