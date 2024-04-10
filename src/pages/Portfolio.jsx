@@ -32,8 +32,8 @@ export default function Portfolio() {
         overlay="bg-yellow-700"
         />
         <ProjCard
-        title="Shows Latinos"
-        image="https://i.ibb.co/6sYTWKk/Screenshot-Capture-2024-03-03-11-24-19.webp"
+        title="Iberosucre Web"
+        image="https://i.ibb.co/Pr2Sg96/portada.png"
         linkPage="/ShowsLatinos"
         overlay="bg-red-300"
         />

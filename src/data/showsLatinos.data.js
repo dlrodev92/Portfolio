@@ -1,7 +1,7 @@
 export const data = {
-    "title": "Shows Latinos",
-    "heroImage": "https://i.ibb.co/6sYTWKk/Screenshot-Capture-2024-03-03-11-24-19.webp",
-    "summary": "\"Show Latinos\" is a comprehensive web platform developed for the company Show Latinos, which aimed to create a dynamic space to showcase their concerts, highlight past events, and promote upcoming ones, facilitating ticket purchases. As a freelance developer, I took on the project's design, frontend, and backend development, employing a robust tech stack that included Next.js, Tailwind CSS for the frontend, and Node.js with Prisma ORM and PostgreSQL for the backend.\n\nThe website features a manager panel, enabling event organizers to create, update, and delete concert details seamlessly. The upcoming integration with Stripe for payment processing aims to enhance customer ownership and engagement by enabling direct ticket sales and promotional email dispatches.",
+    "title": "Iberosucre Productions",
+    "heroImage": "https://i.ibb.co/Pr2Sg96/portada.png",
+    "summary": "\"Iberosucre Productions\" is a comprehensive web platform developed for the company Show Latinos, which aimed to create a dynamic space to showcase their concerts, highlight past events, and promote upcoming ones, facilitating ticket purchases. As a freelance developer, I took on the project's design, frontend, and backend development, employing a robust tech stack that included Next.js, Tailwind CSS for the frontend, and Node.js with Prisma ORM and PostgreSQL for the backend.\n\nThe website features a manager panel, enabling event organizers to create, update, and delete concert details seamlessly. The upcoming integration with Stripe for payment processing aims to enhance customer ownership and engagement by enabling direct ticket sales and promotional email dispatches.",
     "stackInfo":[{
       name:"NextJs",
       grid:"col-start-2 col-span-2 row-start-1 row-span-1",
@@ -53,7 +53,13 @@ export const data = {
     "https://i.ibb.co/W0nRyH4/Screenshot-Capture-2024-03-03-11-17-04.webp",
     "https://i.ibb.co/9mXcv1m/Screenshot-Capture-2024-03-03-11-17-53.webp",
     "https://i.ibb.co/5jHP2Jy/Screenshot-Capture-2024-03-03-11-18-08.webp",
-    "https://i.ibb.co/rG7NnGj/Screenshot-Capture-2024-03-03-11-18-24.webp"],
+    "https://i.ibb.co/rG7NnGj/Screenshot-Capture-2024-03-03-11-18-24.webp",
+     "https://i.ibb.co/yYy5Q17/cms2.png",
+    "https://i.ibb.co/0FNqpXs/cms3.png",
+    "https://i.ibb.co/D1f7NLb/menu.png",
+    "https://i.ibb.co/BTKwRLs/Screenshot-2024-04-10-084822.png",
+    "https://i.ibb.co/VTmwzXq/prueba.png",
+    "https://i.ibb.co/0Crx6jg/cms.png"],
   }
 
   

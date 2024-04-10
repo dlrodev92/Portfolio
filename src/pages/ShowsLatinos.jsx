@@ -62,13 +62,6 @@ function getTakeaways() {
         exit={{ scale: 0, opacity: 0 }}
         transition={{ duration: 0.5 }}
         >
-          <motion.h1 className='lg:text-[2rem] text-[1rem] font-Jost relative border-b-8 mb-5 border-red-500 text-center'
-          initial={{ opacity: 0.1 }}
-          whileInView={{ opacity: 1}}
-          transition={{ duration: 0.7 }}
-          >
-            Project on Progress
-          </motion.h1>
           <motion.h1 className='lg:text-[4rem] text-[3rem] font-Jost relative border-b-8 mb-5 border-blueBackground text-center'
           initial={{ opacity: 0.1 }}
           whileInView={{ opacity: 1}}
