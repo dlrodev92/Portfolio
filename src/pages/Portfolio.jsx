@@ -14,35 +14,46 @@ export default function Portfolio() {
         </motion.h1>
         <div className="w-full h-auto flex justify-center flex-wrap gap-5 p-5">
         <ProjCard
-        title="Mighty Mini Minds"
-        image="https://i.ibb.co/vHXh0cr/mmm-hero.webp"
-        linkPage="/MigthyMiniMinds"
-        overlay="bg-mmm"
+        title="Iberosucre Web"
+        image="https://i.ibb.co/Pr2Sg96/portada.png"
+        linkPage="/ShowsLatinos"
+        overlay="bg-red-300"
         />
+       
         <ProjCard
         title="Distraction Defender"
         image="https://i.ibb.co/5rJWtjD/D.png"
         linkPage="/DistractionDefender"
         overlay="bg-blue-400"
         />
+
         <ProjCard
         title="El Dorado"
         image="https://i.ibb.co/QfrskwF/Screenshot-Capture-2023-09-24-00-43-22.webp"
         linkPage="/ElDorado"
         overlay="bg-yellow-700"
         />
-        <ProjCard
-        title="Iberosucre Web"
-        image="https://i.ibb.co/Pr2Sg96/portada.png"
-        linkPage="/ShowsLatinos"
-        overlay="bg-red-300"
+         <ProjCard
+        title="Ibb Uploader Library"
+        image="https://i.ibb.co/BsRxc80/UPLOADER-1.png"
+        linkPage="/IbbUploader"
+        overlay="bg-red-500/80"
         />
+
+        <ProjCard
+        title="Mighty Mini Minds"
+        image="https://i.ibb.co/vHXh0cr/mmm-hero.webp"
+        linkPage="/MigthyMiniMinds"
+        overlay="bg-mmm"
+        />
+        
         <ProjCard
         title="R S P L S"
         image="https://i.ibb.co/DDnpQhC/bigbang.webp"
         linkPage="/bigBang"
         overlay="bg-bigbang"
         />
+
         <ProjCard
         title="This.Portfolio"
         image="https://i.ibb.co/XWGFLLD/this-Portfolio.webp"

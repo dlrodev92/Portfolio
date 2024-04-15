@@ -9,6 +9,8 @@ import ThisPortfolio from "../pages/ThisPortfolio";
 import ElDorado from "../pages/ElDorado";
 import DistractionDefender from "../pages/DistractionDefender";
 import ShowsLatinos from "../pages/ShowsLatinos";
+import IbbUploader from "../pages/IbbUploader";
+
 import {
     Route,
     Routes,
@@ -32,6 +34,7 @@ export default function RoutesAnimated(){
             <Route path="ElDorado" element={<ElDorado/>} />
             <Route path="DistractionDefender" element={<DistractionDefender/>} />
             <Route path="ShowsLatinos" element={<ShowsLatinos/>} />
+            <Route path="IbbUploader" element={<IbbUploader/>} />
         </Route>
       </Routes>
     )
