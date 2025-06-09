@@ -1,15 +1,16 @@
+
 import AppLayout from "../pages/AppLayout";
 import Home from "../pages/Home";
 import Portfolio from "../pages/Portfolio";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
-import MigthyMiniMinds from "../pages/MigthyMiniMinds";
 import BigBang from "../pages/BigBang";
 import ThisPortfolio from "../pages/ThisPortfolio";
 import ElDorado from "../pages/ElDorado";
-import DistractionDefender from "../pages/DistractionDefender";
 import ShowsLatinos from "../pages/ShowsLatinos";
 import IbbUploader from "../pages/IbbUploader";
+import AIInterviewer from "../pages/AiInterviewer";
+import IbetjoCleanApp from "../pages/IbetjoCleanApp";
 
 import {
     Route,
@@ -28,13 +29,15 @@ export default function RoutesAnimated(){
             <Route path="Portfolio" element={<Portfolio/>} />
             <Route path="Contact" element={<Contact/>} />
             <Route path="About" element={<About/>} />
-            <Route path="MigthyMiniMinds" element={<MigthyMiniMinds/>} />
-            <Route path="ThisPortfolio" element={<ThisPortfolio/>} />
-            <Route path="BigBang" element={<BigBang/>} />
-            <Route path="ElDorado" element={<ElDorado/>} />
-            <Route path="DistractionDefender" element={<DistractionDefender/>} />
-            <Route path="ShowsLatinos" element={<ShowsLatinos/>} />
-            <Route path="IbbUploader" element={<IbbUploader/>} />
+            
+    
+            <Route path="portfolio/ThisPortfolio" element={<ThisPortfolio/>} />
+            <Route path="portfolio/BigBang" element={<BigBang/>} />
+            <Route path="portfolio/ElDorado" element={<ElDorado/>} />
+            <Route path="portfolio/ShowsLatinos" element={<ShowsLatinos/>} />
+            <Route path="portfolio/IbbUploader" element={<IbbUploader/>} />
+            <Route path="portfolio/Ai_interviewer" element={<AIInterviewer/>} />
+            <Route path="portfolio/IbetjoCleanApp" element={<IbetjoCleanApp/>} />
         </Route>
       </Routes>
     )

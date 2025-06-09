@@ -36,6 +36,7 @@ export default function ElDorado() {
         const skillElements = data.stackInfo.map((skill) => {
           return (
             <SkillBouble
+              key={skill.name}
               name={skill.name}
               grid={skill.grid}
               text={skill.text}
@@ -48,7 +49,7 @@ export default function ElDorado() {
       function getTakeaways() {
         const takeawayElements = data.takeaways.map((takeaway) => {
           return (
-            <li className='lg:text-[1.1rem] text-[1rem] font-Jost italic'>"{takeaway}"</li>
+            <li key={takeaway} className='lg:text-[1.1rem] text-[1rem] font-Jost italic'>&quot;{takeaway}&quot;</li>
           );
         });
         return takeawayElements;
@@ -113,7 +114,7 @@ export default function ElDorado() {
                   initial={{ opacity: 0.1 }}
                   whileInView={{ opacity: 1}}
                   transition={{ duration: 1 }}>
-                      <a href="https://eldoradofx.co.uk/" target="_blank"><img src={screenWidth > 1023 ? "https://i.ibb.co/02vpKcw/senales-3.webp" : "https://i.ibb.co/wMBT2b7/senales-4.webp"} alt="migthywebsite" className="w-[200px] p-5 hover:scale-110  duration-500 cursor-pointer "/></a>
+                      <a href="https://eldoradofx.co.uk/" target="_blank" rel="noreferrer"><img src={screenWidth > 1023 ? "https://i.ibb.co/02vpKcw/senales-3.webp" : "https://i.ibb.co/wMBT2b7/senales-4.webp"} alt="migthywebsite" className="w-[200px] p-5 hover:scale-110  duration-500 cursor-pointer "/></a>
                   </motion.div>
                   </motion.div>
                 </motion.div>

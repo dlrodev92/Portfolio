@@ -13,53 +13,55 @@ export default function Portfolio() {
             Projects
         </motion.h1>
         <div className="w-full h-auto flex justify-center flex-wrap gap-5 p-5">
+            
+        <ProjCard
+        title="AI Interviewer MVP"
+        image="https://i.ibb.co/p6m359YN/Screenshot-from-2025-06-09-19-05-02.png"
+        linkPage="/portfolio/Ai_interviewer"
+        overlay="bg-purple-600"
+        />
+
+        <ProjCard
+        title="IbetjoCleanApp"
+        image="https://i.ibb.co/tps3838G/Screenshot-from-2025-06-09-17-16-23.png"
+        linkPage="/portfolio/IbetjoCleanApp"
+        overlay="bg-green-600"
+        />
         <ProjCard
         title="Iberosucre Web"
         image="https://i.ibb.co/Pr2Sg96/portada.png"
-        linkPage="/ShowsLatinos"
+        linkPage="/portfolio/ShowsLatinos"
         overlay="bg-red-300"
-        />
-       
-        <ProjCard
-        title="Distraction Defender"
-        image="https://i.ibb.co/5rJWtjD/D.png"
-        linkPage="/DistractionDefender"
-        overlay="bg-blue-400"
         />
 
         <ProjCard
         title="El Dorado"
         image="https://i.ibb.co/QfrskwF/Screenshot-Capture-2023-09-24-00-43-22.webp"
-        linkPage="/ElDorado"
+        linkPage="/portfolio/ElDorado"
         overlay="bg-yellow-700"
         />
          <ProjCard
         title="Ibb Uploader Library"
         image="https://i.ibb.co/BsRxc80/UPLOADER-1.png"
-        linkPage="/IbbUploader"
+        linkPage="/portfolio/IbbUploader"
         overlay="bg-red-500/80"
         />
 
         <ProjCard
-        title="Mighty Mini Minds"
-        image="https://i.ibb.co/vHXh0cr/mmm-hero.webp"
-        linkPage="/MigthyMiniMinds"
-        overlay="bg-mmm"
-        />
-        
-        <ProjCard
         title="R S P L S"
         image="https://i.ibb.co/DDnpQhC/bigbang.webp"
-        linkPage="/bigBang"
+        linkPage="/portfolio/BigBang"
         overlay="bg-bigbang"
         />
 
         <ProjCard
         title="This.Portfolio"
         image="https://i.ibb.co/XWGFLLD/this-Portfolio.webp"
-        linkPage="/ThisPortfolio"
+        linkPage="/portfolio/ThisPortfolio"
         overlay="bg-blueBackground"
         />
+
+        
         
         </div>
         </div>
